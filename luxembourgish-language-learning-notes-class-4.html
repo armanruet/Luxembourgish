@@ -1,0 +1,132 @@
+<!DOCTYPE html><html lang="en-gb"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Luxembourgish A1 : Class 4 - Luxembourgish</title><meta name="description" content="Table of Contents Countries, People and Languages Grammar Rules Vocabulary Exercises Cultural Notes 1. Countries, People and Languages Country-Nationality-Language Table Land (Country) De Mann (m)&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://armanruet.github.io/Luxembourgish/luxembourgish-language-learning-notes-class-4.html"><link rel="alternate" type="application/atom+xml" href="https://armanruet.github.io/Luxembourgish/feed.xml"><link rel="alternate" type="application/json" href="https://armanruet.github.io/Luxembourgish/feed.json"><meta property="og:title" content="Luxembourgish A1 : Class 4"><meta property="og:site_name" content="Luxembourgish"><meta property="og:description" content="Table of Contents Countries, People and Languages Grammar Rules Vocabulary Exercises Cultural Notes 1. Countries, People and Languages Country-Nationality-Language Table Land (Country) De Mann (m)&hellip;"><meta property="og:url" content="https://armanruet.github.io/Luxembourgish/luxembourgish-language-learning-notes-class-4.html"><meta property="og:type" content="article"><link rel="shortcut icon" href="https://armanruet.github.io/Luxembourgish/media/website/luxembourg.ico" type="image/x-icon"><link rel="preload" href="https://armanruet.github.io/Luxembourgish/assets/dynamic/fonts/jetbrainsmono/jetbrainsmono.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://armanruet.github.io/Luxembourgish/assets/dynamic/fonts/jetbrainsmono/jetbrainsmono-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="https://armanruet.github.io/Luxembourgish/assets/css/style.css?v=512a8f4cb53991b2fdaec6534e141924"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://armanruet.github.io/Luxembourgish/luxembourgish-language-learning-notes-class-4.html"},"headline":"Luxembourgish A1 : Class 4","datePublished":"2025-01-28T23:35+01:00","dateModified":"2025-01-28T23:46+01:00","description":"Table of Contents Countries, People and Languages Grammar Rules Vocabulary Exercises Cultural Notes 1. Countries, People and Languages Country-Nationality-Language Table Land (Country) De Mann (m)&hellip;","author":{"@type":"Person","name":"Arman Hossen","url":"https://armanruet.github.io/Luxembourgish/authors/arman-hossen/"},"publisher":{"@type":"Organization","name":"Arman Hossen"}}</script><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"></head><body class="post-template"><div class="container"><script>document.addEventListener('DOMContentLoaded', () => {
+    // Only create button if it doesn't exist
+    if (!document.querySelector('.theme-toggle')) {
+        const toggleButton = document.createElement('button');
+        toggleButton.className = 'theme-toggle';
+        toggleButton.setAttribute('aria-label', 'Toggle theme');
+        toggleButton.innerHTML = `
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"/>
+                <line x1="12" y1="1" x2="12" y2="3"/>
+                <line x1="12" y1="21" x2="12" y2="23"/>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                <line x1="1" y1="12" x2="3" y2="12"/>
+                <line x1="21" y1="12" x2="23" y2="12"/>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+            </svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+        `;
+        
+        // Add button to DOM
+        document.body.appendChild(toggleButton);
+        
+        // Toggle theme function with smooth transition
+        function toggleTheme() {
+            const isDark = document.body.classList.toggle('dark-mode');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            updateIcon(isDark);
+            
+            // Add transition class
+            document.body.classList.add('theme-transition');
+            setTimeout(() => {
+                document.body.classList.remove('theme-transition');
+            }, 300);
+        }
+        
+        // Update icon based on theme with smooth transition
+        function updateIcon(isDark) {
+            const sunIcon = toggleButton.querySelector('.sun-icon');
+            const moonIcon = toggleButton.querySelector('.moon-icon');
+            
+            if (isDark) {
+                sunIcon.style.display = 'none';
+                moonIcon.style.display = 'block';
+                moonIcon.style.color = '#ff9776'; // Light orange for dark mode
+            } else {
+                moonIcon.style.display = 'none';
+                sunIcon.style.display = 'block';
+                sunIcon.style.color = '#ff7846'; // Orange for light mode
+            }
+        }
+        
+        // Add click event listener
+        toggleButton.addEventListener('click', toggleTheme);
+        
+        // Check saved theme preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark-mode');
+                updateIcon(true);
+            } else {
+                updateIcon(false);
+            }
+        }
+        
+        // Check system preference
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+        if (!savedTheme && prefersDark.matches) {
+            document.body.classList.add('dark-mode');
+            updateIcon(true);
+        }
+        
+        // Listen for system theme changes
+        prefersDark.addListener((e) => {
+            if (!localStorage.getItem('theme')) {
+                if (e.matches) {
+                    document.body.classList.add('dark-mode');
+                    updateIcon(true);
+                } else {
+                    document.body.classList.remove('dark-mode');
+                    updateIcon(false);
+                }
+            }
+        });
+    }
+});</script><header class="header"><div class="header__logo"><a class="logo" href="https://armanruet.github.io/Luxembourgish/">Luxembourgish</a></div></header><main class="content"><article class="post"><header><h1 class="post__title">Luxembourgish A1 : Class 4</h1><div class="post__meta"><time datetime="2025-01-28T23:35" class="post__date">January 28, 2025 </time><span class="post__author"><a href="https://armanruet.github.io/Luxembourgish/authors/arman-hossen/" class="feed__author">Arman Hossen</a></span></div></header><div class="post__entry"><h2 id="table-of-contents">Table of Contents</h2><ol><li><a href="#1-countries-people-and-languages">Countries, People and Languages</a></li><li><a href="#2-grammar-rules">Grammar Rules</a></li><li><a href="#3-vocabulary">Vocabulary</a></li><li><a href="#4-exercises">Exercises</a></li><li><a href="#5-cultural-notes">Cultural Notes</a></li></ol><h2 id="1-countries-people-and-languages">1. Countries, People and Languages</h2><h3 id="country-nationality-language-table">Country-Nationality-Language Table</h3><table><thead><tr><th>Land (Country)</th><th>De Mann (m)</th><th>D’Fra (f)</th><th>Si schwätzen (Language)</th></tr></thead><tbody><tr><td>Lëtzebuerg</td><td>Lëtzebuerger</td><td>Lëtzebuergerin</td><td>Lëtzebuergesch</td></tr><tr><td>Portugal</td><td>Portugis</td><td>Portugisin</td><td>Portugisesch</td></tr><tr><td>Frankräich</td><td>Fransous</td><td>Franséisin</td><td>Franséisch</td></tr><tr><td>Italien</td><td>Italieener</td><td>Italieenerin</td><td>Italieenesch</td></tr><tr><td>Spuenien</td><td>Spuenier</td><td>Spuenierin</td><td>Spuenesch</td></tr><tr><td>Däitschland</td><td>Däitschen</td><td>Däitsch</td><td>Däitsch</td></tr><tr><td>Belsch</td><td>Belsch</td><td>Belsch</td><td>-</td></tr></tbody></table><h3 id="sample-dialogues">Sample Dialogues</h3><ol><li><p><strong>Dialog 1:</strong></p><pre><code>- Ech sinn de Sascha Smirnov.
+- Ech kommen aus Russland, vu Moskau.
+- Meng Fra ass Polin.
+- Mir schwätze Russesch a Polnesch doheem.
+- Ech schwätzen awer och e bëssen Däitsch.
+</code></pre></li><li><p><strong>At INL Cafeteria:</strong></p><pre><code>- Moien, ech heesche Markus. An Dir, wéi heescht Dir?
+- Ech sinn d&#39;Isabel. Komm, mir duzen eis.
+- Ech kommen aus Däitschland. An du?
+- Nee, ech kommen net aus Italien, ech kommen aus Portugal.
+</code></pre></li></ol><h2 id="2-grammar-rules">2. Grammar Rules</h2><h3 id="basic-sentence-structure">Basic Sentence Structure</h3><ol><li><p><strong>Standard Order:</strong></p><ul><li>Subject + Verb + Rest + (Verb2)</li><li>Example: <code>Ech lafen haut e Marathon</code></li></ul></li><li><p><strong>Time Indication:</strong></p><ul><li>Time + Verb + Subject + Rest + (Verb2)</li><li>Example: <code>Haut lafen ech e Marathon</code></li></ul></li></ol><h3 id="articles-and-possessives">Articles and Possessives</h3><ol><li><p><strong>Mäin/Meng Rules:</strong></p><ul><li>Mäin (masculine): <code>mäin Mann</code>, <code>mäin Numm</code></li><li>Meng (feminine): <code>meng Fra</code>, <code>meng Schwëster</code></li></ul></li><li><p><strong>Keen/Kee Rules:</strong></p><ul><li>Keen before:<ul><li>Vowels (a, e, i, o, u)</li><li>Consonants: d, h, n, t, z</li><li>Example: <code>keen Auto</code>, <code>keen Handy</code></li></ul></li><li>Kee before other consonants<ul><li>Example: <code>kee Bic</code>, <code>kee Problem</code></li></ul></li></ul></li><li><p><strong>Combined Keen/Kee Usage:</strong></p><ul><li>In same sentence: Follow both rules</li><li>Examples:<ul><li><code>Ech hunn keen Auto a kee Bic.</code></li><li><code>Si huet keen Handy a kee Computer.</code></li></ul></li></ul></li></ol><h3 id="question-formation">Question Formation</h3><ol><li><p><strong>Formal:</strong></p><ul><li><code>Wat fir Sprooche schwätzt Dir?</code></li><li><code>Wat fir eng Nationalitéit hutt Dir?</code></li></ul></li><li><p><strong>Informal:</strong></p><ul><li><code>Wat fir Sprooche schwätze du?</code></li><li><code>Wat fir eng Nationalitéit hues du?</code></li></ul></li></ol><h2 id="3-vocabulary">3. Vocabulary</h2><h3 id="essential-words">Essential Words</h3><ul><li>ähnlech = similar</li><li>aus der Stad = from the city</li><li>an der Stad = in the city</li><li>doheem = at home</li><li>bëssen = a little</li><li>awer = but</li><li>oder = or</li><li>dann = then</li><li>jo = yes (often used as interjection)</li><li>gell = right? (interjection)</li></ul><h3 id="common-verbs">Common Verbs</h3><ul><li>schwätzen = to speak</li><li>léieren = to learn</li><li>liesen = to read</li><li>verstoen = to understand</li><li>kënnen = can/to be able</li><li>sinn = to be</li></ul><h2 id="4-exercises">4. Exercises</h2><h3 id="practice-1-keenkee-usage">Practice 1: Keen/Kee Usage</h3><p>Fill in with keen or kee:</p><ol><li>Ech hunn _____ Auto.</li><li>Si huet _____ Handy.</li><li>Hien huet _____ Durst.</li><li>Mir hunn _____ Problem.</li></ol><h3 id="practice-2-combined-usage">Practice 2: Combined Usage</h3><p>Create sentences using both keen and kee:</p><ol><li>Auto/Bus: _________________</li><li>Uebst/Geméis: _________________</li><li>Appetit/Problem: _________________</li><li>Durscht/Kaffi: _________________</li></ol><h2 id="5-cultural-notes">5. Cultural Notes</h2><h3 id="language-context">Language Context</h3><ul><li>Luxembourg is multilingual with three official languages:<ol><li>Luxembourgish (Lëtzebuergesch)</li><li>French (Franséisch)</li><li>German (Däitsch)</li></ol></li></ul><h3 id="learning-resources">Learning Resources</h3><ul><li>LOD - Lëtzebuerger Online Dictionnaire (<a href="http://www.lod.lu">www.lod.lu</a>)</li><li>Learn Luxembourg (learn.llo.lu/platform/#/learning-path)</li><li>SDL Platform (sdl.inll.lu)</li></ul><h3 id="communication-styles">Communication Styles</h3><ul><li>Formal (dirzen) - using “Dir”</li><li>Informal (duzen) - using “du”</li><li>When to use each form</li></ul><h3 id="important-places">Important Places</h3><ul><li>Bettebuerg -&gt; Bettebuerger Déierenparc</li><li>INL (Institut National des Langues)</li></ul><p>I’ll continue expanding the markdown notes with additional important details and sections.</p><h2 id="6-grammatical-structures">6. Grammatical Structures</h2><h3 id="time-expressions">Time Expressions</h3><ul><li>normalerweis = normally/usually</li><li>haut = today</li><li>moies = in the morning</li><li>owes = in the evening</li><li>mëttes = at noon/afternoon</li></ul><h3 id="days-of-the-week-usage">Days of the Week Usage</h3><table><thead><tr><th>Lëtzebuergesch</th><th>English</th></tr></thead><tbody><tr><td>Méindeg</td><td>Monday</td></tr><tr><td>Dënschdeg</td><td>Tuesday</td></tr><tr><td>Mëttwoch</td><td>Wednesday</td></tr><tr><td>Donneschdeg</td><td>Thursday</td></tr><tr><td>Freideg</td><td>Friday</td></tr><tr><td>Samschdeg</td><td>Saturday</td></tr><tr><td>Sonndeg</td><td>Sunday</td></tr></tbody></table><h3 id="numbers-and-time">Numbers and Time</h3><ul><li><strong>Time Indications:</strong><pre><code>um 7 Auer = at 7 o&#39;clock
+um 12 Auer = at noon
+um 1 Auer = at 1 o&#39;clock
+</code></pre></li></ul><h2 id="7-useful-phrases">7. Useful Phrases</h2><h3 id="daily-activities">Daily Activities</h3><pre><code>Ech ginn 2 mol an der Woch akafen = I go shopping twice a week
+Ech ginn Freides moies akafen = I go shopping on Friday mornings
+Ech ginn an den Supermarché = I go to the supermarket
+</code></pre><h3 id="shopping-vocabulary">Shopping Vocabulary</h3><ul><li><p><strong>Places:</strong></p><ul><li>den Supermarché = the supermarket</li><li>Cactus</li><li>Lidl</li><li>d’Belle Etoile</li></ul></li><li><p><strong>Items:</strong></p><pre><code>Fësch = fish
+Fleesch = meat
+frëscht Uebst = fresh fruit
+Geméis = vegetables
+Mëllechprodukter = dairy products
+Botzmëttel = cleaning products
+</code></pre></li></ul><h2 id="8-conversation-topics">8. Conversation Topics</h2><h3 id="family-members">Family Members</h3><ul><li>mäin Mann = my husband</li><li>meng Fra = my wife</li><li>eis Kanner = our children</li><li>meng Famill = my family</li></ul><h3 id="hobbies-and-activities">Hobbies and Activities</h3><pre><code>Ech ginn gär akafen = I like to go shopping
+Ech ginn normalerweis alleng = I usually go alone
+Ech kafen eng Kaddoen = I buy gifts
+Ech schenken gär e perséinlechen Kado = I like to give personal gifts
+</code></pre><h2 id="9-additional-grammar-points">9. Additional Grammar Points</h2><h3 id="article-usage-with-places">Article Usage with Places</h3><ul><li><p><strong>With Cities:</strong></p><pre><code>vu Lëtzebuerg = from Luxembourg
+an der Stad = in the city
+zu Esch = in Esch
+</code></pre></li><li><p><strong>With Stores:</strong></p><pre><code>an den Cactus = to Cactus
+an den Lidl = to Lidl
+an d&#39;Belle Etoile = to Belle Etoile
+</code></pre></li></ul><h3 id="frequency-words">Frequency Words</h3><ul><li>2 mol an der Woch = twice a week</li><li>1 mol am Dag = once a day</li><li>all Dag = every day</li><li>heiansdo = sometimes</li><li>normalerweis = usually</li></ul><h2 id="10-practice-exercises">10. Practice Exercises</h2><h3 id="exercise-1-time-expressions">Exercise 1: Time Expressions</h3><p>Complete these sentences:</p><ol><li>Ech ginn _____ (day) _____ (time of day) akafen.</li><li>Mir iessen _____ (time) zu Mëtteg.</li><li>Si schwätzt _____ (frequency) Lëtzebuergesch.</li></ol><h3 id="exercise-2-shopping-dialogue">Exercise 2: Shopping Dialogue</h3><p>Create a dialogue using these elements:</p><ul><li>Greeting</li><li>Asking for products</li><li>Prices</li><li>Thank you and goodbye</li></ul></div><footer class="wrapper post__footer"><p class="post__last-updated">This article was updated on January 28, 2025</p><div class="post__share"></div></footer><nav class="pagination"><div class="pagination__title"><span>Read other posts</span></div><div class="pagination__buttons"><a href="https://armanruet.github.io/Luxembourgish/luxembourgish-a1-class-3.html" class="btn previous" rel="prev" aria-label="[MISSING TRANSLATION]:  Luxembourgish A1 : Class 3 "><span class="btn__icon">←</span> <span class="btn__text">Luxembourgish A1 : Class 3</span></a></div></nav></article></main><footer class="footer"><div class="footer__inner"><div class="footer__copyright"><p>© 2025 Powered by Publii CMS :: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank" rel="noopener">Theme</a> ported by the <a href="https://getpublii.com/customization-service/" target="_blank" rel="noopener">Publii Team</a></p></div></div></footer></div><script defer="defer" src="https://armanruet.github.io/Luxembourgish/assets/js/scripts.min.js?v=c2232aa7558e9517946129d2a1b8c770"></script><script>window.publiiThemeMenuConfig={mobileMenuMode:'sidebar',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script><script>var images = document.querySelectorAll('img[loading]');
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }</script></body></html>

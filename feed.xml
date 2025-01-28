@@ -3,14 +3,916 @@
     <title>Luxembourgish</title>
     <link href="https://armanruet.github.io/Luxembourgish/feed.xml" rel="self" />
     <link href="https://armanruet.github.io/Luxembourgish" />
-    <updated>2025-01-22T08:57:43+01:00</updated>
+    <updated>2025-01-28T23:46:57+01:00</updated>
     <author>
         <name>Arman Hossen</name>
     </author>
     <id>https://armanruet.github.io/Luxembourgish</id>
 
     <entry>
-        <title>Luxembourgish (Lëtzebuergesch) Learning Guide - Class 2</title>
+        <title>Luxembourgish A1 : Class 4</title>
+        <author>
+            <name>Arman Hossen</name>
+        </author>
+        <link href="https://armanruet.github.io/Luxembourgish/luxembourgish-language-learning-notes-class-4.html"/>
+        <id>https://armanruet.github.io/Luxembourgish/luxembourgish-language-learning-notes-class-4.html</id>
+
+        <updated>2025-01-28T23:35:51+01:00</updated>
+            <summary>
+                <![CDATA[
+                    Table of Contents Countries, People and Languages Grammar Rules Vocabulary Exercises Cultural Notes 1. Countries, People and Languages Country-Nationality-Language Table Land (Country) De Mann (m)&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li><a href="#1-countries-people-and-languages">Countries, People and Languages</a></li>
+<li><a href="#2-grammar-rules">Grammar Rules</a></li>
+<li><a href="#3-vocabulary">Vocabulary</a></li>
+<li><a href="#4-exercises">Exercises</a></li>
+<li><a href="#5-cultural-notes">Cultural Notes</a></li>
+</ol>
+<h2 id="1-countries-people-and-languages">1. Countries, People and Languages</h2>
+<h3 id="country-nationality-language-table">Country-Nationality-Language Table</h3>
+<table>
+<thead>
+<tr>
+<th>Land (Country)</th>
+<th>De Mann (m)</th>
+<th>D’Fra (f)</th>
+<th>Si schwätzen (Language)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Lëtzebuerg</td>
+<td>Lëtzebuerger</td>
+<td>Lëtzebuergerin</td>
+<td>Lëtzebuergesch</td>
+</tr>
+<tr>
+<td>Portugal</td>
+<td>Portugis</td>
+<td>Portugisin</td>
+<td>Portugisesch</td>
+</tr>
+<tr>
+<td>Frankräich</td>
+<td>Fransous</td>
+<td>Franséisin</td>
+<td>Franséisch</td>
+</tr>
+<tr>
+<td>Italien</td>
+<td>Italieener</td>
+<td>Italieenerin</td>
+<td>Italieenesch</td>
+</tr>
+<tr>
+<td>Spuenien</td>
+<td>Spuenier</td>
+<td>Spuenierin</td>
+<td>Spuenesch</td>
+</tr>
+<tr>
+<td>Däitschland</td>
+<td>Däitschen</td>
+<td>Däitsch</td>
+<td>Däitsch</td>
+</tr>
+<tr>
+<td>Belsch</td>
+<td>Belsch</td>
+<td>Belsch</td>
+<td>-</td>
+</tr>
+</tbody></table>
+<h3 id="sample-dialogues">Sample Dialogues</h3>
+<ol>
+<li><p><strong>Dialog 1:</strong></p><pre><code>- Ech sinn de Sascha Smirnov.
+- Ech kommen aus Russland, vu Moskau.
+- Meng Fra ass Polin.
+- Mir schwätze Russesch a Polnesch doheem.
+- Ech schwätzen awer och e bëssen Däitsch.
+</code></pre>
+</li>
+<li><p><strong>At INL Cafeteria:</strong></p><pre><code>- Moien, ech heesche Markus. An Dir, wéi heescht Dir?
+- Ech sinn d&#39;Isabel. Komm, mir duzen eis.
+- Ech kommen aus Däitschland. An du?
+- Nee, ech kommen net aus Italien, ech kommen aus Portugal.
+</code></pre>
+</li>
+</ol>
+<h2 id="2-grammar-rules">2. Grammar Rules</h2>
+<h3 id="basic-sentence-structure">Basic Sentence Structure</h3>
+<ol>
+<li><p><strong>Standard Order:</strong></p><ul>
+<li>Subject + Verb + Rest + (Verb2)</li>
+<li>Example: <code>Ech lafen haut e Marathon</code></li>
+</ul>
+</li>
+<li><p><strong>Time Indication:</strong></p><ul>
+<li>Time + Verb + Subject + Rest + (Verb2)</li>
+<li>Example: <code>Haut lafen ech e Marathon</code></li>
+</ul>
+</li>
+</ol>
+<h3 id="articles-and-possessives">Articles and Possessives</h3>
+<ol>
+<li><p><strong>Mäin/Meng Rules:</strong></p><ul>
+<li>Mäin (masculine): <code>mäin Mann</code>, <code>mäin Numm</code></li>
+<li>Meng (feminine): <code>meng Fra</code>, <code>meng Schwëster</code></li>
+</ul>
+</li>
+<li><p><strong>Keen/Kee Rules:</strong></p><ul>
+<li>Keen before:<ul>
+<li>Vowels (a, e, i, o, u)</li>
+<li>Consonants: d, h, n, t, z</li>
+<li>Example: <code>keen Auto</code>, <code>keen Handy</code></li>
+</ul>
+</li>
+<li>Kee before other consonants<ul>
+<li>Example: <code>kee Bic</code>, <code>kee Problem</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Combined Keen/Kee Usage:</strong></p><ul>
+<li>In same sentence: Follow both rules</li>
+<li>Examples:<ul>
+<li><code>Ech hunn keen Auto a kee Bic.</code></li>
+<li><code>Si huet keen Handy a kee Computer.</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="question-formation">Question Formation</h3>
+<ol>
+<li><p><strong>Formal:</strong></p><ul>
+<li><code>Wat fir Sprooche schwätzt Dir?</code></li>
+<li><code>Wat fir eng Nationalitéit hutt Dir?</code></li>
+</ul>
+</li>
+<li><p><strong>Informal:</strong></p><ul>
+<li><code>Wat fir Sprooche schwätze du?</code></li>
+<li><code>Wat fir eng Nationalitéit hues du?</code></li>
+</ul>
+</li>
+</ol>
+<h2 id="3-vocabulary">3. Vocabulary</h2>
+<h3 id="essential-words">Essential Words</h3>
+<ul>
+<li>ähnlech = similar</li>
+<li>aus der Stad = from the city</li>
+<li>an der Stad = in the city</li>
+<li>doheem = at home</li>
+<li>bëssen = a little</li>
+<li>awer = but</li>
+<li>oder = or</li>
+<li>dann = then</li>
+<li>jo = yes (often used as interjection)</li>
+<li>gell = right? (interjection)</li>
+</ul>
+<h3 id="common-verbs">Common Verbs</h3>
+<ul>
+<li>schwätzen = to speak</li>
+<li>léieren = to learn</li>
+<li>liesen = to read</li>
+<li>verstoen = to understand</li>
+<li>kënnen = can/to be able</li>
+<li>sinn = to be</li>
+</ul>
+<h2 id="4-exercises">4. Exercises</h2>
+<h3 id="practice-1-keenkee-usage">Practice 1: Keen/Kee Usage</h3>
+<p>Fill in with keen or kee:</p><ol>
+<li>Ech hunn _____ Auto.</li>
+<li>Si huet _____ Handy.</li>
+<li>Hien huet _____ Durst.</li>
+<li>Mir hunn _____ Problem.</li>
+</ol>
+<h3 id="practice-2-combined-usage">Practice 2: Combined Usage</h3>
+<p>Create sentences using both keen and kee:</p><ol>
+<li>Auto/Bus: _________________</li>
+<li>Uebst/Geméis: _________________</li>
+<li>Appetit/Problem: _________________</li>
+<li>Durscht/Kaffi: _________________</li>
+</ol>
+<h2 id="5-cultural-notes">5. Cultural Notes</h2>
+<h3 id="language-context">Language Context</h3>
+<ul>
+<li>Luxembourg is multilingual with three official languages:<ol>
+<li>Luxembourgish (Lëtzebuergesch)</li>
+<li>French (Franséisch)</li>
+<li>German (Däitsch)</li>
+</ol>
+</li>
+</ul>
+<h3 id="learning-resources">Learning Resources</h3>
+<ul>
+<li>LOD - Lëtzebuerger Online Dictionnaire (<a href="http://www.lod.lu">www.lod.lu</a>)</li>
+<li>Learn Luxembourg (learn.llo.lu/platform/#/learning-path)</li>
+<li>SDL Platform (sdl.inll.lu)</li>
+</ul>
+<h3 id="communication-styles">Communication Styles</h3>
+<ul>
+<li>Formal (dirzen) - using “Dir”</li>
+<li>Informal (duzen) - using “du”</li>
+<li>When to use each form</li>
+</ul>
+<h3 id="important-places">Important Places</h3>
+<ul>
+<li>Bettebuerg -&gt; Bettebuerger Déierenparc</li>
+<li>INL (Institut National des Langues)</li>
+</ul>
+<p>I’ll continue expanding the markdown notes with additional important details and sections.</p><h2 id="6-grammatical-structures">6. Grammatical Structures</h2>
+<h3 id="time-expressions">Time Expressions</h3>
+<ul>
+<li>normalerweis = normally/usually</li>
+<li>haut = today</li>
+<li>moies = in the morning</li>
+<li>owes = in the evening</li>
+<li>mëttes = at noon/afternoon</li>
+</ul>
+<h3 id="days-of-the-week-usage">Days of the Week Usage</h3>
+<table>
+<thead>
+<tr>
+<th>Lëtzebuergesch</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Méindeg</td>
+<td>Monday</td>
+</tr>
+<tr>
+<td>Dënschdeg</td>
+<td>Tuesday</td>
+</tr>
+<tr>
+<td>Mëttwoch</td>
+<td>Wednesday</td>
+</tr>
+<tr>
+<td>Donneschdeg</td>
+<td>Thursday</td>
+</tr>
+<tr>
+<td>Freideg</td>
+<td>Friday</td>
+</tr>
+<tr>
+<td>Samschdeg</td>
+<td>Saturday</td>
+</tr>
+<tr>
+<td>Sonndeg</td>
+<td>Sunday</td>
+</tr>
+</tbody></table>
+<h3 id="numbers-and-time">Numbers and Time</h3>
+<ul>
+<li><strong>Time Indications:</strong><pre><code>um 7 Auer = at 7 o&#39;clock
+um 12 Auer = at noon
+um 1 Auer = at 1 o&#39;clock
+</code></pre>
+</li>
+</ul>
+<h2 id="7-useful-phrases">7. Useful Phrases</h2>
+<h3 id="daily-activities">Daily Activities</h3>
+<pre><code>Ech ginn 2 mol an der Woch akafen = I go shopping twice a week
+Ech ginn Freides moies akafen = I go shopping on Friday mornings
+Ech ginn an den Supermarché = I go to the supermarket
+</code></pre>
+<h3 id="shopping-vocabulary">Shopping Vocabulary</h3>
+<ul>
+<li><p><strong>Places:</strong></p><ul>
+<li>den Supermarché = the supermarket</li>
+<li>Cactus</li>
+<li>Lidl</li>
+<li>d’Belle Etoile</li>
+</ul>
+</li>
+<li><p><strong>Items:</strong></p><pre><code>Fësch = fish
+Fleesch = meat
+frëscht Uebst = fresh fruit
+Geméis = vegetables
+Mëllechprodukter = dairy products
+Botzmëttel = cleaning products
+</code></pre>
+</li>
+</ul>
+<h2 id="8-conversation-topics">8. Conversation Topics</h2>
+<h3 id="family-members">Family Members</h3>
+<ul>
+<li>mäin Mann = my husband</li>
+<li>meng Fra = my wife</li>
+<li>eis Kanner = our children</li>
+<li>meng Famill = my family</li>
+</ul>
+<h3 id="hobbies-and-activities">Hobbies and Activities</h3>
+<pre><code>Ech ginn gär akafen = I like to go shopping
+Ech ginn normalerweis alleng = I usually go alone
+Ech kafen eng Kaddoen = I buy gifts
+Ech schenken gär e perséinlechen Kado = I like to give personal gifts
+</code></pre>
+<h2 id="9-additional-grammar-points">9. Additional Grammar Points</h2>
+<h3 id="article-usage-with-places">Article Usage with Places</h3>
+<ul>
+<li><p><strong>With Cities:</strong></p><pre><code>vu Lëtzebuerg = from Luxembourg
+an der Stad = in the city
+zu Esch = in Esch
+</code></pre>
+</li>
+<li><p><strong>With Stores:</strong></p><pre><code>an den Cactus = to Cactus
+an den Lidl = to Lidl
+an d&#39;Belle Etoile = to Belle Etoile
+</code></pre>
+</li>
+</ul>
+<h3 id="frequency-words">Frequency Words</h3>
+<ul>
+<li>2 mol an der Woch = twice a week</li>
+<li>1 mol am Dag = once a day</li>
+<li>all Dag = every day</li>
+<li>heiansdo = sometimes</li>
+<li>normalerweis = usually</li>
+</ul>
+<h2 id="10-practice-exercises">10. Practice Exercises</h2>
+<h3 id="exercise-1-time-expressions">Exercise 1: Time Expressions</h3>
+<p>Complete these sentences:</p><ol>
+<li>Ech ginn _____ (day) _____ (time of day) akafen.</li>
+<li>Mir iessen _____ (time) zu Mëtteg.</li>
+<li>Si schwätzt _____ (frequency) Lëtzebuergesch.</li>
+</ol>
+<h3 id="exercise-2-shopping-dialogue">Exercise 2: Shopping Dialogue</h3>
+<p>Create a dialogue using these elements:</p><ul>
+<li>Greeting</li>
+<li>Asking for products</li>
+<li>Prices</li>
+<li>Thank you and goodbye</li>
+</ul>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Luxembourgish A1 : Class 3</title>
+        <author>
+            <name>Arman Hossen</name>
+        </author>
+        <link href="https://armanruet.github.io/Luxembourgish/luxembourgish-a1-class-3.html"/>
+        <id>https://armanruet.github.io/Luxembourgish/luxembourgish-a1-class-3.html</id>
+
+        <updated>2025-01-28T00:29:43+01:00</updated>
+            <summary>
+                <![CDATA[
+                    Luxembourgish A1 - Comprehensive Study Guide 1. Basic Language Structure 1.1 Alphabet (D’Alphabet) Basic Letters &amp; Pronunciation Special Characters Basic Introduction A: Bonjour, ech sinn&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h1 id="luxembourgish-a1---comprehensive-study-guide">Luxembourgish A1 - Comprehensive Study Guide</h1>
+<h2 id="1-basic-language-structure">1. Basic Language Structure</h2>
+<h3 id="11-alphabet-dalphabet">1.1 Alphabet (D’Alphabet)</h3>
+<ul>
+<li><p><strong>Basic Letters &amp; Pronunciation</strong></p><ul>
+<li>A (a), B (bee), C (tsee), D (dee)</li>
+<li>E (ee), F (eff), G (gee), H (ha)</li>
+<li>I (i), J (jott), K (ka), L (ell)</li>
+<li>M (emm), N (enn), O (o), P (pee)</li>
+<li>Q (ku), R (är), S (ess), T (tee)</li>
+<li>U (u), V (fau), W (wee), X (iks)</li>
+<li>Y (igrek), Z (tsett)</li>
+</ul>
+</li>
+<li><p><strong>Special Characters</strong></p><ul>
+<li>Ä (A mat Trema) - like ‘a’ in ‘cat’</li>
+<li>Ë (E mat Trema) - like ‘u’ in ‘but’</li>
+<li>É (E mat Accent aigu) - like ‘ay’ in ‘say’</li>
+<li>È (E mat Accent grave) - like ‘e’ in ‘bed’</li>
+<li>Ö (O mat Trema) - like ‘u’ in ‘fur’</li>
+<li>Ü (U mat Trema) - like ‘ue’ in ‘blue’</li>
+</ul>
+</li>
+</ul>
+<h3 id="12-essential-grammar-rules">1.2 Essential Grammar Rules</h3>
+<h4 id="n-rule-n-reegel">N-Rule (n-Reegel)</h4>
+<ul>
+<li><strong>Add ‘n’ before:</strong><ul>
+<li>Vowels: A, E, I, O, U, (Y)</li>
+<li>Consonants: D, H, N, T, Z</li>
+</ul>
+</li>
+<li><strong>No ‘n’ before:</strong><ul>
+<li>B, C, F, G, J, K, L, M, P, Q, R, S, V, W, X, (Y)</li>
+</ul>
+</li>
+</ul>
+<h4 id="articles-with-names">Articles with Names</h4>
+<ul>
+<li><strong>Masculine:</strong><ul>
+<li>den + name (den Tom)</li>
+<li>de + name (de Paul)</li>
+</ul>
+</li>
+<li><strong>Feminine:</strong><ul>
+<li>d’ + name (d’Sandra)</li>
+<li>d’ + name (d’Marie)</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-communication">2. Communication</h2>
+<h3 id="21-formal-dialogues">2.1 Formal Dialogues</h3>
+<ol>
+<li><p><strong>Basic Introduction</strong></p><pre><code>A: Bonjour, ech sinn d&#39;Madamm Meyer.
+B: A wéi heescht Dir?
+A: Ech heesche Paul Wirion.
+B: Et freet mech.
+A: Mech och.
+</code></pre>
+</li>
+<li><p><strong>Name Spelling</strong></p><pre><code>A: Wéi ass Ären Numm?
+B: Mäin Numm ass Martina Nitschke.
+A: Kënnt Dir dat buschtawéieren?
+B: N-I-T-S-C-H-K-E
+A: Gutt, de Rendez-vous ass notéiert.
+B: Merci. Awar.
+</code></pre>
+</li>
+</ol>
+<h3 id="22-informal-dialogues">2.2 Informal Dialogues</h3>
+<ol>
+<li><p><strong>Casual Meeting</strong></p><pre><code>A: Salut, ech sinn den Alain. An du?
+B: Ech sinn d&#39;Carine.
+A: Wéi geet et?
+B: Gutt!
+</code></pre>
+</li>
+<li><p><strong>Name Inquiry</strong></p><pre><code>A: Wéi ass däin Numm?
+B: Dylan. D-Y-L-A-N.
+</code></pre>
+</li>
+</ol>
+<h2 id="3-origins-and-nationalities">3. Origins and Nationalities</h2>
+<h3 id="31-question-patterns">3.1 Question Patterns</h3>
+<ul>
+<li><p><strong>Formal:</strong></p><ul>
+<li>Vu wou kommt Dir?</li>
+<li>Kommt Dir aus…?</li>
+</ul>
+</li>
+<li><p><strong>Informal:</strong></p><ul>
+<li>Vu wou kënns du?</li>
+<li>Kënns du aus…?</li>
+</ul>
+</li>
+</ul>
+<h3 id="32-country-rules-aus--land">3.2 Country Rules (aus + Land)</h3>
+<ol>
+<li><p><strong>Direct Country Names</strong></p><ul>
+<li>aus Japan</li>
+<li>aus Italien</li>
+</ul>
+</li>
+<li><p><strong>Countries with Articles</strong></p><ul>
+<li>aus der Belsch (Belgium)</li>
+<li>aus dem Iran</li>
+</ul>
+</li>
+<li><p><strong>Special Cases</strong></p><ul>
+<li>vu Lëtzebuerg</li>
+<li>vum Cap Vert</li>
+<li>vun der Côte d’Ivoire</li>
+</ul>
+</li>
+</ol>
+<h3 id="33-city-rules-vun--uertschaft">3.3 City Rules (vun + Uertschaft)</h3>
+<ol>
+<li><p><strong>Regular Cities</strong></p><ul>
+<li>vun Tokyo</li>
+<li>vu Roum</li>
+<li>vu Bréissel</li>
+<li>vun Ettelbréck</li>
+</ul>
+</li>
+<li><p><strong>General Reference</strong></p><ul>
+<li>aus der Stad (from the city)</li>
+</ul>
+</li>
+</ol>
+<h3 id="34-nationality-expressions">3.4 Nationality Expressions</h3>
+<ul>
+<li>Ech si Lëtzebuerger/in</li>
+<li>Ech si Fransous/Franséisin</li>
+<li>Ech sinn Däitschen/Däitsch</li>
+<li>Ech si Belsch</li>
+</ul>
+<h2 id="4-colors-faarwen">4. Colors (Faarwen)</h2>
+<h3 id="41-basic-colors">4.1 Basic Colors</h3>
+<ul>
+<li>giel (yellow)</li>
+<li>orange</li>
+<li>rout (red)</li>
+<li>brong (brown)</li>
+<li>rosa (pink)</li>
+</ul>
+<h3 id="42-variations">4.2 Variations</h3>
+<ul>
+<li>hellblo/dunkelblo (light blue/dark blue)</li>
+<li>hellgréng/donkelgréng (light green/dark green)</li>
+<li>schwaarz (black)</li>
+<li>wäiss (white)</li>
+<li>gro (gray)</li>
+</ul>
+<h2 id="5-daily-life-topics">5. Daily Life Topics</h2>
+<h3 id="51-shopping-kommissiounen">5.1 Shopping (Kommissiounen)</h3>
+<ul>
+<li><strong>Frequency Questions</strong><ul>
+<li>Wéi oft maacht dir d’Kommissiounen?</li>
+<li>Wéini gidd dir Kommissiounen maachen?</li>
+</ul>
+</li>
+<li><strong>Shopping Locations</strong><ul>
+<li>Supermarché (Cactus, Lidl)</li>
+<li>Belle Etoile (shopping center)</li>
+</ul>
+</li>
+<li><strong>Items</strong><ul>
+<li>Fësch (fish)</li>
+<li>Fleesch (meat)</li>
+<li>Uebst a Geméis (fruits and vegetables)</li>
+<li>Mëllechprodukter (dairy products)</li>
+<li>Botzmëttel (cleaning products)</li>
+</ul>
+</li>
+</ul>
+<h3 id="52-transportation-transportmëttelen">5.2 Transportation (Transportmëttelen)</h3>
+<ul>
+<li><strong>Types</strong><ul>
+<li>Auto (car)</li>
+<li>Bus</li>
+<li>Vëlo (bicycle)</li>
+<li>Zuch (train)</li>
+<li>zu Fouss (by foot)</li>
+</ul>
+</li>
+<li><strong>Questions</strong><ul>
+<li>Wéi sidd dir haut komm?</li>
+<li>Wéi gidd dir op d’Aarbecht?</li>
+</ul>
+</li>
+</ul>
+<h3 id="53-food--drink-iessen-an-drénken">5.3 Food &amp; Drink (Iessen an drénken)</h3>
+<ul>
+<li><strong>Meal Times</strong><ul>
+<li>Kaffi (7 Auer)</li>
+<li>Mëttegiessen (12 Auer)</li>
+<li>Owesiessen (7 Auer)</li>
+</ul>
+</li>
+<li><strong>Food Types</strong><ul>
+<li>Hunnegschmier (honey sandwich)</li>
+<li>Gebeess (jam)</li>
+<li>Paangecher (pancakes)</li>
+<li>Geméiszopp (vegetable soup)</li>
+</ul>
+</li>
+</ul>
+<h3 id="54-social-contacts-sozial-kontakter">5.4 Social Contacts (Sozial Kontakter)</h3>
+<ul>
+<li><strong>Questions</strong><ul>
+<li>Vu wou kommt dir?</li>
+<li>Zenter wéini wunnt dir hei?</li>
+<li>Hutt dir Kontakt mat Leit?</li>
+</ul>
+</li>
+<li><strong>Activities</strong><ul>
+<li>grillen (barbecue)</li>
+<li>spadséieren (walk)</li>
+<li>schwammen (swim)</li>
+</ul>
+</li>
+</ul>
+<h3 id="55-household-de-stot">5.5 Household (De Stot)</h3>
+<ul>
+<li><strong>Tasks</strong><ul>
+<li>botzen (clean)</li>
+<li>spullen (wash dishes)</li>
+<li>strecken (iron)</li>
+<li>Wäsch maachen (do laundry)</li>
+</ul>
+</li>
+<li><strong>Frequency</strong><ul>
+<li>2 mol an der Woch (twice a week)</li>
+<li>5 mol an der Woch (five times a week)</li>
+</ul>
+</li>
+</ul>
+<h3 id="56-entertainment">5.6 Entertainment</h3>
+<ul>
+<li><strong>TV/Movies</strong><ul>
+<li>Action Filmer</li>
+<li>dramatesch Filmer</li>
+<li>Noriichten (news)</li>
+</ul>
+</li>
+<li><strong>Languages</strong><ul>
+<li>op Arabesch (in Arabic)</li>
+<li>op Franséisch (in French)</li>
+<li>op Lëtzebuergesch (in Luxembourgish)</li>
+</ul>
+</li>
+</ul>
+<h3 id="57-health-gesondheet">5.7 Health (Gesondheet)</h3>
+<ul>
+<li><strong>Healthy Living</strong><ul>
+<li>Sport maachen (exercise)</li>
+<li>gesond iessen (eat healthy)</li>
+<li>schlofen (sleep)</li>
+</ul>
+</li>
+<li><strong>Activities</strong><ul>
+<li>Gymnastik</li>
+<li>zu Fouss goen (walking)</li>
+<li>schwammen (swimming)</li>
+</ul>
+</li>
+</ul>
+<h3 id="58-housing-wunnen">5.8 Housing (Wunnen)</h3>
+<ul>
+<li><strong>Descriptions</strong><ul>
+<li>Appartementer (apartments)</li>
+<li>Residenz (residence)</li>
+<li>Butteker (shops)</li>
+<li>Spillplazen (playgrounds)</li>
+</ul>
+</li>
+<li><strong>Locations</strong><ul>
+<li>zu Esch</li>
+<li>an der Stad</li>
+<li>am Duerf (in the village)</li>
+</ul>
+</li>
+</ul>
+<h3 id="59-fashion-moud-a-kleeder">5.9 Fashion (Moud a Kleeder)</h3>
+<ul>
+<li><strong>Clothing Types</strong><ul>
+<li>sportlech Kleeder (sporty clothes)</li>
+<li>Kostüm (suit)</li>
+<li>Schong (shoes)</li>
+<li>Box (pants)</li>
+</ul>
+</li>
+<li><strong>Shopping Habits</strong><ul>
+<li>Solden (sales)</li>
+<li>lokal akafen (shop locally)</li>
+<li>online shopping</li>
+</ul>
+</li>
+</ul>
+<h3 id="510-work-aarbecht">5.10 Work (Aarbecht)</h3>
+<ul>
+<li><strong>Questions</strong><ul>
+<li>Wat schafft dir?</li>
+<li>Wou schafft dir?</li>
+<li>Zenter wéini schafft dir do?</li>
+</ul>
+</li>
+<li><strong>Schedule</strong><ul>
+<li>Aarbechtszäiten (working hours)</li>
+<li>Paus (break)</li>
+<li>Iwwerstonnen (overtime)</li>
+</ul>
+</li>
+</ul>
+<h2 id="6-practice-exercises">6. Practice Exercises</h2>
+<h3 id="61-name-recognition">6.1 Name Recognition</h3>
+<ul>
+<li><strong>Exercise 1:</strong> Wien ass dat?<pre><code>Dat ass d&#39;Madamm Weiler an den Här Losch.
+Ech sinn d&#39;Almira an dat ass d&#39;Sandra.
+</code></pre>
+</li>
+</ul>
+<h3 id="62-flag-colors">6.2 Flag Colors</h3>
+<ul>
+<li><strong>Exercise:</strong> De Fändel vun Australien<pre><code>ass donkelblo, rout a wäiss
+</code></pre>
+</li>
+</ul>
+<h3 id="63-article-practice">6.3 Article Practice</h3>
+<ul>
+<li>Fill in: den, de, or d’<pre><code>___ Tom
+___ Sandra
+___ Paul
+___ Marie
+</code></pre>
+</li>
+</ul>
+<p>[Previous sections 6-end remain the same]</p><h3 id="11-alphabet-dalphabet-1">1.1 Alphabet (D’Alphabet)</h3>
+<ul>
+<li><p><strong>Basic Letters &amp; Pronunciation</strong></p><ul>
+<li>A (a), B (bee), C (tsee), D (dee)</li>
+<li>E (ee), F (eff), G (gee), H (ha)</li>
+<li>I (i), J (jott), K (ka), L (ell)</li>
+<li>M (emm), N (enn), O (o), P (pee)</li>
+<li>Q (ku), R (är), S (ess), T (tee)</li>
+<li>U (u), V (fau), W (wee), X (iks)</li>
+<li>Y (igrek), Z (tsett)</li>
+</ul>
+</li>
+<li><p><strong>Special Characters</strong></p><ul>
+<li>Ä (A mat Trema) - like ‘a’ in ‘cat’</li>
+<li>Ë (E mat Trema) - like ‘u’ in ‘but’</li>
+<li>É (E mat Accent aigu) - like ‘ay’ in ‘say’</li>
+<li>È (E mat Accent grave) - like ‘e’ in ‘bed’</li>
+<li>Ö (O mat Trema) - like ‘u’ in ‘fur’</li>
+<li>Ü (U mat Trema) - like ‘ue’ in ‘blue’</li>
+</ul>
+</li>
+</ul>
+<h3 id="12-essential-grammar-rules-1">1.2 Essential Grammar Rules</h3>
+<h4 id="n-rule-n-reegel-1">N-Rule (n-Reegel)</h4>
+<ul>
+<li><strong>Add ‘n’ before:</strong><ul>
+<li>Vowels: A, E, I, O, U, (Y)</li>
+<li>Consonants: D, H, N, T, Z</li>
+</ul>
+</li>
+<li><strong>No ‘n’ before:</strong><ul>
+<li>B, C, F, G, J, K, L, M, P, Q, R, S, V, W, X, (Y)</li>
+</ul>
+</li>
+</ul>
+<h4 id="articles-with-names-1">Articles with Names</h4>
+<ul>
+<li><strong>Masculine:</strong><ul>
+<li>den + name (den Tom)</li>
+<li>de + name (de Paul)</li>
+</ul>
+</li>
+<li><strong>Feminine:</strong><ul>
+<li>d’ + name (d’Sandra)</li>
+<li>d’ + name (d’Marie)</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-communication-1">2. Communication</h2>
+<h3 id="21-formal-dialogues-1">2.1 Formal Dialogues</h3>
+<ol>
+<li><p><strong>Basic Introduction</strong></p><pre><code>A: Bonjour, ech sinn d&#39;Madamm Meyer.
+B: A wéi heescht Dir?
+A: Ech heesche Paul Wirion.
+B: Et freet mech.
+A: Mech och.
+</code></pre>
+</li>
+<li><p><strong>Name Spelling</strong></p><pre><code>A: Wéi ass Ären Numm?
+B: Mäin Numm ass Martina Nitschke.
+A: Kënnt Dir dat buschtawéieren?
+B: N-I-T-S-C-H-K-E
+A: Gutt, de Rendez-vous ass notéiert.
+B: Merci. Awar.
+</code></pre>
+</li>
+</ol>
+<h3 id="22-informal-dialogues-1">2.2 Informal Dialogues</h3>
+<ol>
+<li><p><strong>Casual Meeting</strong></p><pre><code>A: Salut, ech sinn den Alain. An du?
+B: Ech sinn d&#39;Carine.
+A: Wéi geet et?
+B: Gutt!
+</code></pre>
+</li>
+<li><p><strong>Name Inquiry</strong></p><pre><code>A: Wéi ass däin Numm?
+B: Dylan. D-Y-L-A-N.
+</code></pre>
+</li>
+</ol>
+<h2 id="3-origins-and-nationalities-1">3. Origins and Nationalities</h2>
+<h3 id="31-question-patterns-1">3.1 Question Patterns</h3>
+<ul>
+<li><p><strong>Formal:</strong></p><ul>
+<li>Vu wou kommt Dir?</li>
+<li>Kommt Dir aus…?</li>
+</ul>
+</li>
+<li><p><strong>Informal:</strong></p><ul>
+<li>Vu wou kënns du?</li>
+<li>Kënns du aus…?</li>
+</ul>
+</li>
+</ul>
+<h3 id="32-country-rules-aus--land-1">3.2 Country Rules (aus + Land)</h3>
+<ol>
+<li><p><strong>Direct Country Names</strong></p><ul>
+<li>aus Japan</li>
+<li>aus Italien</li>
+</ul>
+</li>
+<li><p><strong>Countries with Articles</strong></p><ul>
+<li>aus der Belsch (Belgium)</li>
+<li>aus dem Iran</li>
+</ul>
+</li>
+<li><p><strong>Special Cases</strong></p><ul>
+<li>vu Lëtzebuerg</li>
+<li>vum Cap Vert</li>
+<li>vun der Côte d’Ivoire</li>
+</ul>
+</li>
+</ol>
+<h3 id="33-city-rules-vun--uertschaft-1">3.3 City Rules (vun + Uertschaft)</h3>
+<ol>
+<li><p><strong>Regular Cities</strong></p><ul>
+<li>vun Tokyo</li>
+<li>vu Roum</li>
+<li>vu Bréissel</li>
+<li>vun Ettelbréck</li>
+</ul>
+</li>
+<li><p><strong>General Reference</strong></p><ul>
+<li>aus der Stad (from the city)</li>
+</ul>
+</li>
+</ol>
+<h3 id="34-nationality-expressions-1">3.4 Nationality Expressions</h3>
+<ul>
+<li>Ech si Lëtzebuerger/in</li>
+<li>Ech si Fransous/Franséisin</li>
+<li>Ech sinn Däitschen/Däitsch</li>
+<li>Ech si Belsch</li>
+</ul>
+<h2 id="4-colors-faarwen-1">4. Colors (Faarwen)</h2>
+<h3 id="41-basic-colors-1">4.1 Basic Colors</h3>
+<ul>
+<li>giel (yellow)</li>
+<li>orange</li>
+<li>rout (red)</li>
+<li>brong (brown)</li>
+<li>rosa (pink)</li>
+</ul>
+<h3 id="42-variations-1">4.2 Variations</h3>
+<ul>
+<li>hellblo/dunkelblo (light blue/dark blue)</li>
+<li>hellgréng/donkelgréng (light green/dark green)</li>
+<li>schwaarz (black)</li>
+<li>wäiss (white)</li>
+<li>gro (gray)</li>
+</ul>
+<h2 id="5-cultural-notes">5. Cultural Notes</h2>
+<h3 id="51-formal-vs-informal-usage">5.1 Formal vs Informal Usage</h3>
+<ul>
+<li><p><strong>Formal Situations:</strong></p><ul>
+<li>Use “Dir” form</li>
+<li>Business settings</li>
+<li>With strangers</li>
+<li>Official contexts</li>
+</ul>
+</li>
+<li><p><strong>Informal Situations:</strong></p><ul>
+<li>Use “du” form</li>
+<li>Among friends</li>
+<li>With family</li>
+<li>Casual settings</li>
+</ul>
+</li>
+</ul>
+<h3 id="52-language-context">5.2 Language Context</h3>
+<ul>
+<li>Luxembourgish: Daily communication</li>
+<li>French/German: Business settings</li>
+<li>All three: Official documents</li>
+</ul>
+<h2 id="6-practice-guidelines">6. Practice Guidelines</h2>
+<h3 id="61-speaking-practice">6.1 Speaking Practice</h3>
+<ol>
+<li>Practice formal and informal introductions</li>
+<li>Master alphabet pronunciation</li>
+<li>Train with nationality expressions</li>
+<li>Use correct articles with names</li>
+</ol>
+<h3 id="62-writing-practice">6.2 Writing Practice</h3>
+<ol>
+<li>Spell names using Luxembourgish alphabet</li>
+<li>Write short dialogues</li>
+<li>Practice color combinations</li>
+<li>Construct origin statements</li>
+</ol>
+<h3 id="63-listening-practice">6.3 Listening Practice</h3>
+<ol>
+<li>Dialog distinction (formal vs informal)</li>
+<li>Name spelling recognition</li>
+<li>Country and city pronunciation</li>
+<li>Color vocabulary recognition</li>
+</ol>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Luxembourgish A1 : Class 2</title>
         <author>
             <name>Arman Hossen</name>
         </author>
@@ -293,7 +1195,7 @@ Mnemonic: “UNITED ZOAH”</li>
         </content>
     </entry>
     <entry>
-        <title> Luxembourgish Language - Class 1 (A1) Detailed Notes</title>
+        <title> Luxembourgish A1 : Class 1</title>
         <author>
             <name>Arman Hossen</name>
         </author>
