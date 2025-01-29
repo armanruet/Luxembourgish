@@ -1,6 +1,104 @@
-<!DOCTYPE html><html lang="en-gb"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Test - Luxembourgish</title><meta name="description" content="Introduction to Basic Conversations Understanding basic conversations in Luxembourgish is essential for daily interactions. This lesson covers fundamental questions and responses for personal introductions. Asking&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://armanruet.github.io/Luxembourgish/test.html"><link rel="alternate" type="application/atom+xml" href="https://armanruet.github.io/Luxembourgish/feed.xml"><link rel="alternate" type="application/json" href="https://armanruet.github.io/Luxembourgish/feed.json"><meta property="og:title" content="Test"><meta property="og:site_name" content="Luxembourgish"><meta property="og:description" content="Introduction to Basic Conversations Understanding basic conversations in Luxembourgish is essential for daily interactions. This lesson covers fundamental questions and responses for personal introductions. Asking&hellip;"><meta property="og:url" content="https://armanruet.github.io/Luxembourgish/test.html"><meta property="og:type" content="article"><link rel="shortcut icon" href="https://armanruet.github.io/Luxembourgish/media/website/luxembourg.ico" type="image/x-icon"><link rel="preload" href="https://armanruet.github.io/Luxembourgish/assets/dynamic/fonts/jetbrainsmono/jetbrainsmono.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://armanruet.github.io/Luxembourgish/assets/dynamic/fonts/jetbrainsmono/jetbrainsmono-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="https://armanruet.github.io/Luxembourgish/assets/css/style.css?v=d6b3f321cd41ccabc7e14bddf55ea91a"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://armanruet.github.io/Luxembourgish/test.html"},"headline":"Test","datePublished":"2025-01-19T01:37+01:00","dateModified":"2025-01-19T01:37+01:00","description":"Introduction to Basic Conversations Understanding basic conversations in Luxembourgish is essential for daily interactions. This lesson covers fundamental questions and responses for personal introductions. Asking&hellip;","author":{"@type":"Person","name":"Arman Hossen","url":"https://armanruet.github.io/Luxembourgish/authors/arman-hossen/"},"publisher":{"@type":"Organization","name":"Arman Hossen"}}</script><noscript><style>img[loading] {
+<!DOCTYPE html><html lang="en-gb"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Test - Luxembourgish</title><meta name="description" content="Introduction to Basic Conversations Understanding basic conversations in Luxembourgish is essential for daily interactions. This lesson covers fundamental questions and responses for personal introductions. Asking&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://armanruet.github.io/Luxembourgish/test.html"><link rel="alternate" type="application/atom+xml" href="https://armanruet.github.io/Luxembourgish/feed.xml"><link rel="alternate" type="application/json" href="https://armanruet.github.io/Luxembourgish/feed.json"><meta property="og:title" content="Test"><meta property="og:site_name" content="Luxembourgish"><meta property="og:description" content="Introduction to Basic Conversations Understanding basic conversations in Luxembourgish is essential for daily interactions. This lesson covers fundamental questions and responses for personal introductions. Asking&hellip;"><meta property="og:url" content="https://armanruet.github.io/Luxembourgish/test.html"><meta property="og:type" content="article"><link rel="shortcut icon" href="https://armanruet.github.io/Luxembourgish/media/website/luxembourg.ico" type="image/x-icon"><link rel="preload" href="https://armanruet.github.io/Luxembourgish/assets/dynamic/fonts/jetbrainsmono/jetbrainsmono.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://armanruet.github.io/Luxembourgish/assets/dynamic/fonts/jetbrainsmono/jetbrainsmono-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="https://armanruet.github.io/Luxembourgish/assets/css/style.css?v=d216b3ec97e91ec647f302036de45030"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://armanruet.github.io/Luxembourgish/test.html"},"headline":"Test","datePublished":"2025-01-19T01:37+01:00","dateModified":"2025-01-19T01:37+01:00","description":"Introduction to Basic Conversations Understanding basic conversations in Luxembourgish is essential for daily interactions. This lesson covers fundamental questions and responses for personal introductions. Asking&hellip;","author":{"@type":"Person","name":"Arman Hossen","url":"https://armanruet.github.io/Luxembourgish/authors/arman-hossen/"},"publisher":{"@type":"Organization","name":"Arman Hossen"}}</script><noscript><style>img[loading] {
                     opacity: 1;
-                }</style></noscript><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"></head><body class="post-template"><div class="container"><script>document.addEventListener('DOMContentLoaded', () => {
+                }</style></noscript><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"></head><body class="post-template"><div class="container"><script>document.addEventListener('DOMContentLoaded', function() {
+    // Create modal HTML
+    const modal = document.createElement('div');
+    modal.className = 'image-modal';
+    modal.innerHTML = `
+        <button class="modal-close">×</button>
+        <div class="modal-content">
+            <img src="" alt="Preview">
+        </div>
+    `;
+    document.body.appendChild(modal);
+
+    // Get modal elements
+    const modalImg = modal.querySelector('img');
+    const closeBtn = modal.querySelector('.modal-close');
+
+    // Add click handlers to all post images
+    document.querySelectorAll('.post-single .post__image img').forEach(img => {
+        img.addEventListener('click', function() {
+            modal.classList.add('show');
+            modalImg.src = this.src;
+            enableZoom(modalImg);
+        });
+    });
+
+    // Close modal handlers
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) closeModal();
+    });
+
+    function closeModal() {
+        modal.classList.remove('show');
+        modalImg.style.transform = 'scale(1)';
+    }
+
+    // Zoom and pan functionality
+    function enableZoom(img) {
+        let scale = 1;
+        let translateX = 0;
+        let translateY = 0;
+        let startX = 0;
+        let startY = 0;
+
+        // Pinch zoom
+        let initialDistance = 0;
+        let currentScale = 1;
+
+        img.addEventListener('touchstart', function(e) {
+            if (e.touches.length === 2) {
+                initialDistance = getDistance(e.touches[0], e.touches[1]);
+            } else if (e.touches.length === 1) {
+                startX = e.touches[0].pageX - translateX;
+                startY = e.touches[0].pageY - translateY;
+            }
+        });
+
+        img.addEventListener('touchmove', function(e) {
+            e.preventDefault();
+            if (e.touches.length === 2) {
+                // Pinch zoom
+                const distance = getDistance(e.touches[0], e.touches[1]);
+                const newScale = (distance / initialDistance) * scale;
+                if (newScale >= 1 && newScale <= 4) {
+                    currentScale = newScale;
+                    img.style.transform = `scale(${currentScale}) translate(${translateX}px, ${translateY}px)`;
+                }
+            } else if (e.touches.length === 1 && currentScale > 1) {
+                // Pan when zoomed
+                translateX = e.touches[0].pageX - startX;
+                translateY = e.touches[0].pageY - startY;
+                img.style.transform = `scale(${currentScale}) translate(${translateX}px, ${translateY}px)`;
+            }
+        });
+
+        function getDistance(touch1, touch2) {
+            const dx = touch1.pageX - touch2.pageX;
+            const dy = touch1.pageY - touch2.pageY;
+            return Math.sqrt(dx * dx + dy * dy);
+        }
+
+        // Double tap to reset
+        let lastTap = 0;
+        img.addEventListener('touchend', function(e) {
+            const currentTime = new Date().getTime();
+            const tapLength = currentTime - lastTap;
+            if (tapLength < 300 && tapLength > 0) {
+                scale = 1;
+                translateX = 0;
+                translateY = 0;
+                currentScale = 1;
+                img.style.transform = 'scale(1) translate(0, 0)';
+            }
+            lastTap = currentTime;
+        });
+    }
+});
+            
+document.addEventListener('DOMContentLoaded', () => {
     // Only create button if it doesn't exist
     if (!document.querySelector('.theme-toggle')) {
         const toggleButton = document.createElement('button');
