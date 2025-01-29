@@ -84,6 +84,7 @@
 
     // Image Modal Setup
     if (!document.querySelector('.image-modal')) {
+        // Create and add modal to DOM
         const modal = document.createElement('div');
         modal.className = 'image-modal';
         modal.innerHTML = `
@@ -97,10 +98,48 @@
         const modalImg = modal.querySelector('img');
         const closeBtn = modal.querySelector('.modal-close');
 
+        // Function to initialize image click handlers
+        function initializeImageHandlers() {
+            // Select all blog post images
+            const blogImages = document.querySelectorAll('img');
+            console.log('Found images:', blogImages.length);
+
+            blogImages.forEach(img => {
+                // Add click event
+                img.style.cursor = 'pointer';
+                img.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    console.log('Image clicked:', this.src);
+                    modal.classList.add('show');
+                    modalImg.src = this.src;
+                    enableZoom(modalImg);
+                });
+            });
+        }
+
+        // Initialize immediately and watch for changes
+        initializeImageHandlers();
+        
+        // Watch for dynamically added images
+        const observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                if (mutation.addedNodes.length) {
+                    initializeImageHandlers();
+                }
+            });
+        });
+
+        observer.observe(document.body, { childList: true, subtree: true });
+
         function closeModal() {
             modal.classList.remove('show');
             modalImg.style.transform = 'scale(1)';
         }
+
+        closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) closeModal();
+        });
 
         function enableZoom(img) {
             let scale = 1;
@@ -157,23 +196,68 @@
             const dy = touch1.pageY - touch2.pageY;
             return Math.sqrt(dx * dx + dy * dy);
         }
-
-        // Add click handlers to post images
-        document.querySelectorAll('.post-single .post__image img').forEach(img => {
-            img.addEventListener('click', function() {
-                modal.classList.add('show');
-                modalImg.src = this.src;
-                enableZoom(modalImg);
-            });
-        });
-
-        // Close modal handlers
-        closeBtn.addEventListener('click', closeModal);
-        modal.addEventListener('click', function(e) {
-            if (e.target === modal) closeModal();
-        });
     }
-});</script><header class="header"><div class="header__logo"><a class="logo" href="https://armanruet.github.io/Luxembourgish/">Luxembourgish</a></div></header><main class="content"><article class="post"><header><h1 class="post__title">Luxembourgish A1 : Class 3</h1><div class="post__meta"><time datetime="2025-01-28T00:29" class="post__date">January 28, 2025 </time><span class="post__author"><a href="https://armanruet.github.io/Luxembourgish/authors/arman-hossen/" class="feed__author">Arman Hossen</a></span></div></header><div class="post__entry"><h1 id="luxembourgish-a1---comprehensive-study-guide">Luxembourgish A1 - Comprehensive Study Guide</h1><h2 id="1-basic-language-structure">1. Basic Language Structure</h2><h3 id="11-alphabet-dalphabet">1.1 Alphabet (D’Alphabet)</h3><ul><li><p><strong>Basic Letters &amp; Pronunciation</strong></p><ul><li>A (a), B (bee), C (tsee), D (dee)</li><li>E (ee), F (eff), G (gee), H (ha)</li><li>I (i), J (jott), K (ka), L (ell)</li><li>M (emm), N (enn), O (o), P (pee)</li><li>Q (ku), R (är), S (ess), T (tee)</li><li>U (u), V (fau), W (wee), X (iks)</li><li>Y (igrek), Z (tsett)</li></ul></li><li><p><strong>Special Characters</strong></p><ul><li>Ä (A mat Trema) - like ‘a’ in ‘cat’</li><li>Ë (E mat Trema) - like ‘u’ in ‘but’</li><li>É (E mat Accent aigu) - like ‘ay’ in ‘say’</li><li>È (E mat Accent grave) - like ‘e’ in ‘bed’</li><li>Ö (O mat Trema) - like ‘u’ in ‘fur’</li><li>Ü (U mat Trema) - like ‘ue’ in ‘blue’</li></ul></li></ul><h3 id="12-essential-grammar-rules">1.2 Essential Grammar Rules</h3><h4 id="n-rule-n-reegel">N-Rule (n-Reegel)</h4><ul><li><strong>Add ‘n’ before:</strong><ul><li>Vowels: A, E, I, O, U, (Y)</li><li>Consonants: D, H, N, T, Z</li></ul></li><li><strong>No ‘n’ before:</strong><ul><li>B, C, F, G, J, K, L, M, P, Q, R, S, V, W, X, (Y)</li></ul></li></ul><h4 id="articles-with-names">Articles with Names</h4><ul><li><strong>Masculine:</strong><ul><li>den + name (den Tom)</li><li>de + name (de Paul)</li></ul></li><li><strong>Feminine:</strong><ul><li>d’ + name (d’Sandra)</li><li>d’ + name (d’Marie)</li></ul></li></ul><h2 id="2-communication">2. Communication</h2><h3 id="21-formal-dialogues">2.1 Formal Dialogues</h3><ol><li><p><strong>Basic Introduction</strong></p><pre><code>A: Bonjour, ech sinn d&#39;Madamm Meyer.
+});</script><style>/* Image modal styles */
+.image-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.image-modal.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.modal-content img {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+    transform-origin: center;
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10000;
+    padding: 0.5rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Make images clickable */
+.post__image img {
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.post__image img:active {
+    opacity: 0.8;
+}</style><header class="header"><div class="header__logo"><a class="logo" href="https://armanruet.github.io/Luxembourgish/">Luxembourgish</a></div></header><main class="content"><article class="post"><header><h1 class="post__title">Luxembourgish A1 : Class 3</h1><div class="post__meta"><time datetime="2025-01-28T00:29" class="post__date">January 28, 2025 </time><span class="post__author"><a href="https://armanruet.github.io/Luxembourgish/authors/arman-hossen/" class="feed__author">Arman Hossen</a></span></div></header><div class="post__entry"><h1 id="luxembourgish-a1---comprehensive-study-guide">Luxembourgish A1 - Comprehensive Study Guide</h1><h2 id="1-basic-language-structure">1. Basic Language Structure</h2><h3 id="11-alphabet-dalphabet">1.1 Alphabet (D’Alphabet)</h3><ul><li><p><strong>Basic Letters &amp; Pronunciation</strong></p><ul><li>A (a), B (bee), C (tsee), D (dee)</li><li>E (ee), F (eff), G (gee), H (ha)</li><li>I (i), J (jott), K (ka), L (ell)</li><li>M (emm), N (enn), O (o), P (pee)</li><li>Q (ku), R (är), S (ess), T (tee)</li><li>U (u), V (fau), W (wee), X (iks)</li><li>Y (igrek), Z (tsett)</li></ul></li><li><p><strong>Special Characters</strong></p><ul><li>Ä (A mat Trema) - like ‘a’ in ‘cat’</li><li>Ë (E mat Trema) - like ‘u’ in ‘but’</li><li>É (E mat Accent aigu) - like ‘ay’ in ‘say’</li><li>È (E mat Accent grave) - like ‘e’ in ‘bed’</li><li>Ö (O mat Trema) - like ‘u’ in ‘fur’</li><li>Ü (U mat Trema) - like ‘ue’ in ‘blue’</li></ul></li></ul><h3 id="12-essential-grammar-rules">1.2 Essential Grammar Rules</h3><h4 id="n-rule-n-reegel">N-Rule (n-Reegel)</h4><ul><li><strong>Add ‘n’ before:</strong><ul><li>Vowels: A, E, I, O, U, (Y)</li><li>Consonants: D, H, N, T, Z</li></ul></li><li><strong>No ‘n’ before:</strong><ul><li>B, C, F, G, J, K, L, M, P, Q, R, S, V, W, X, (Y)</li></ul></li></ul><h4 id="articles-with-names">Articles with Names</h4><ul><li><strong>Masculine:</strong><ul><li>den + name (den Tom)</li><li>de + name (de Paul)</li></ul></li><li><strong>Feminine:</strong><ul><li>d’ + name (d’Sandra)</li><li>d’ + name (d’Marie)</li></ul></li></ul><h2 id="2-communication">2. Communication</h2><h3 id="21-formal-dialogues">2.1 Formal Dialogues</h3><ol><li><p><strong>Basic Introduction</strong></p><pre><code>A: Bonjour, ech sinn d&#39;Madamm Meyer.
 B: A wéi heescht Dir?
 A: Ech heesche Paul Wirion.
 B: Et freet mech.

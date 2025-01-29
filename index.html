@@ -84,6 +84,7 @@
 
     // Image Modal Setup
     if (!document.querySelector('.image-modal')) {
+        // Create and add modal to DOM
         const modal = document.createElement('div');
         modal.className = 'image-modal';
         modal.innerHTML = `
@@ -97,10 +98,48 @@
         const modalImg = modal.querySelector('img');
         const closeBtn = modal.querySelector('.modal-close');
 
+        // Function to initialize image click handlers
+        function initializeImageHandlers() {
+            // Select all blog post images
+            const blogImages = document.querySelectorAll('img');
+            console.log('Found images:', blogImages.length);
+
+            blogImages.forEach(img => {
+                // Add click event
+                img.style.cursor = 'pointer';
+                img.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    console.log('Image clicked:', this.src);
+                    modal.classList.add('show');
+                    modalImg.src = this.src;
+                    enableZoom(modalImg);
+                });
+            });
+        }
+
+        // Initialize immediately and watch for changes
+        initializeImageHandlers();
+        
+        // Watch for dynamically added images
+        const observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                if (mutation.addedNodes.length) {
+                    initializeImageHandlers();
+                }
+            });
+        });
+
+        observer.observe(document.body, { childList: true, subtree: true });
+
         function closeModal() {
             modal.classList.remove('show');
             modalImg.style.transform = 'scale(1)';
         }
+
+        closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) closeModal();
+        });
 
         function enableZoom(img) {
             let scale = 1;
@@ -157,23 +196,68 @@
             const dy = touch1.pageY - touch2.pageY;
             return Math.sqrt(dx * dx + dy * dy);
         }
-
-        // Add click handlers to post images
-        document.querySelectorAll('.post-single .post__image img').forEach(img => {
-            img.addEventListener('click', function() {
-                modal.classList.add('show');
-                modalImg.src = this.src;
-                enableZoom(modalImg);
-            });
-        });
-
-        // Close modal handlers
-        closeBtn.addEventListener('click', closeModal);
-        modal.addEventListener('click', function(e) {
-            if (e.target === modal) closeModal();
-        });
     }
-});</script><header class="header"><div class="header__logo"><a class="logo" href="https://armanruet.github.io/Luxembourgish/">Luxembourgish</a></div></header><main class="content"><div class="hero framed"><h1>Welcome to my Luxembourgish learning jouney 🇱🇺!</h1><p>Explore my journey following blogs made with love ❤️</p></div><div class="posts"><article class="post"><div class="post-content-wrapper"><div class="post-meta-wrapper"><div class="post-category">LUXEMBOURGISH LEARNING</div><h2 class="post__title"><a href="https://armanruet.github.io/Luxembourgish/luxembourgish-language-learning-notes-class-4.html">Luxembourgish A1 : Class 4</a></h2><div class="post__meta"><time datetime="2025-01-28T23:35" class="post__date">January 28, 2025 </time><a href="https://armanruet.github.io/Luxembourgish/authors/arman-hossen/" class="post__author">Arman Hossen</a></div><div class="post__tags"></div><div class="post__content"><p>Table of Contents Countries, People and Languages Grammar Rules Vocabulary Exercises Cultural Notes 1. Countries, People and Languages Country-Nationality-Language Table Land (Country) De Mann (m)&hellip;</p><a href="https://armanruet.github.io/Luxembourgish/luxembourgish-language-learning-notes-class-4.html" class="read-more">Read more &#8594;</a></div></div></div></article><article class="post"><div class="post-content-wrapper"><div class="post-meta-wrapper"><div class="post-category">LUXEMBOURGISH LEARNING</div><h2 class="post__title"><a href="https://armanruet.github.io/Luxembourgish/luxembourgish-a1-class-3.html">Luxembourgish A1 : Class 3</a></h2><div class="post__meta"><time datetime="2025-01-28T00:29" class="post__date">January 28, 2025 </time><a href="https://armanruet.github.io/Luxembourgish/authors/arman-hossen/" class="post__author">Arman Hossen</a></div><div class="post__tags"></div><div class="post__content"><p>Luxembourgish A1 - Comprehensive Study Guide 1. Basic Language Structure 1.1 Alphabet (D’Alphabet) Basic Letters &amp; Pronunciation Special Characters Basic Introduction A: Bonjour, ech sinn&hellip;</p><a href="https://armanruet.github.io/Luxembourgish/luxembourgish-a1-class-3.html" class="read-more">Read more &#8594;</a></div></div></div></article><article class="post"><div class="post-content-wrapper"><div class="post-meta-wrapper"><div class="post-category">LUXEMBOURGISH LEARNING</div><h2 class="post__title"><a href="https://armanruet.github.io/Luxembourgish/luxembourgish-letzebuergesch-learning-guide-class-2.html">Luxembourgish A1 : Class 2</a></h2><div class="post__meta"><time datetime="2025-01-22T08:57" class="post__date">January 22, 2025 </time><a href="https://armanruet.github.io/Luxembourgish/authors/arman-hossen/" class="post__author">Arman Hossen</a></div><div class="post__tags"></div><div class="post__content"><p>1. Learning Objectives (Léierziler) Saying hello and goodbye (Moien an Äddi soen) Asking and telling how one is doing (Soen a froen, wéi et geet)&hellip;</p><a href="https://armanruet.github.io/Luxembourgish/luxembourgish-letzebuergesch-learning-guide-class-2.html" class="read-more">Read more &#8594;</a></div></div></div></article><article class="post"><div class="post-content-wrapper"><div class="post-meta-wrapper"><div class="post-category">LUXEMBOURGISH LEARNING</div><h2 class="post__title"><a href="https://armanruet.github.io/Luxembourgish/test.html">Test</a></h2><div class="post__meta"><time datetime="2025-01-19T01:37" class="post__date">January 19, 2025 </time><a href="https://armanruet.github.io/Luxembourgish/authors/arman-hossen/" class="post__author">Arman Hossen</a></div><div class="post__tags"></div><div class="post__content"><p>Introduction to Basic Conversations Understanding basic conversations in Luxembourgish is essential for daily interactions. This lesson covers fundamental questions and responses for personal introductions. Asking&hellip;</p><a href="https://armanruet.github.io/Luxembourgish/test.html" class="read-more">Read more &#8594;</a></div></div></div></article><article class="post"><div class="post-content-wrapper"><div class="post-meta-wrapper"><div class="post-category">LUXEMBOURGISH LEARNING</div><h2 class="post__title"><a href="https://armanruet.github.io/Luxembourgish/luxembourgish-language-class-1-a1-detailed-notes.html"> Luxembourgish A1 : Class 1</a></h2><div class="post__meta"><time datetime="2025-01-18T23:54" class="post__date">January 18, 2025 </time><a href="https://armanruet.github.io/Luxembourgish/authors/arman-hossen/" class="post__author">Arman Hossen</a></div><div class="post__tags"></div><div class="post__content"><p>Introduction to Basic Conversations Understanding basic conversations in Luxembourgish is essential for daily interactions. This lesson covers fundamental questions and responses for personal introductions. Asking&hellip;</p><a href="https://armanruet.github.io/Luxembourgish/luxembourgish-language-class-1-a1-detailed-notes.html" class="read-more">Read more &#8594;</a></div></div><div class="post__image"><img src="https://armanruet.github.io/Luxembourgish/media/posts/1/class_1.png" srcset="https://armanruet.github.io/Luxembourgish/media/posts/1/responsive/class_1-xs.png 300w, https://armanruet.github.io/Luxembourgish/media/posts/1/responsive/class_1-sm.png 480w, https://armanruet.github.io/Luxembourgish/media/posts/1/responsive/class_1-md.png 768w, https://armanruet.github.io/Luxembourgish/media/posts/1/responsive/class_1-lg.png 1024w" sizes="(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)" loading="lazy" alt=""></div></div></article></div></main><footer class="footer"><div class="footer__inner"><div class="footer__copyright"><p>© 2025 Powered by Publii CMS :: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank" rel="noopener">Theme</a> ported by the <a href="https://getpublii.com/customization-service/" target="_blank" rel="noopener">Publii Team</a></p></div></div></footer></div><script defer="defer" src="https://armanruet.github.io/Luxembourgish/assets/js/scripts.min.js?v=c2232aa7558e9517946129d2a1b8c770"></script><script>window.publiiThemeMenuConfig={mobileMenuMode:'sidebar',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script><script>var images = document.querySelectorAll('img[loading]');
+});</script><style>/* Image modal styles */
+.image-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.image-modal.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.modal-content img {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+    transform-origin: center;
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10000;
+    padding: 0.5rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Make images clickable */
+.post__image img {
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.post__image img:active {
+    opacity: 0.8;
+}</style><header class="header"><div class="header__logo"><a class="logo" href="https://armanruet.github.io/Luxembourgish/">Luxembourgish</a></div></header><main class="content"><div class="hero framed"><h1>Welcome to my Luxembourgish learning jouney 🇱🇺!</h1><p>Explore my journey following blogs made with love ❤️</p></div><div class="posts"><article class="post"><div class="post-content-wrapper"><div class="post-meta-wrapper"><div class="post-category">LUXEMBOURGISH LEARNING</div><h2 class="post__title"><a href="https://armanruet.github.io/Luxembourgish/luxembourgish-language-learning-notes-class-4.html">Luxembourgish A1 : Class 4</a></h2><div class="post__meta"><time datetime="2025-01-28T23:35" class="post__date">January 28, 2025 </time><a href="https://armanruet.github.io/Luxembourgish/authors/arman-hossen/" class="post__author">Arman Hossen</a></div><div class="post__tags"></div><div class="post__content"><p>Table of Contents Countries, People and Languages Grammar Rules Vocabulary Exercises Cultural Notes 1. Countries, People and Languages Country-Nationality-Language Table Land (Country) De Mann (m)&hellip;</p><a href="https://armanruet.github.io/Luxembourgish/luxembourgish-language-learning-notes-class-4.html" class="read-more">Read more &#8594;</a></div></div></div></article><article class="post"><div class="post-content-wrapper"><div class="post-meta-wrapper"><div class="post-category">LUXEMBOURGISH LEARNING</div><h2 class="post__title"><a href="https://armanruet.github.io/Luxembourgish/luxembourgish-a1-class-3.html">Luxembourgish A1 : Class 3</a></h2><div class="post__meta"><time datetime="2025-01-28T00:29" class="post__date">January 28, 2025 </time><a href="https://armanruet.github.io/Luxembourgish/authors/arman-hossen/" class="post__author">Arman Hossen</a></div><div class="post__tags"></div><div class="post__content"><p>Luxembourgish A1 - Comprehensive Study Guide 1. Basic Language Structure 1.1 Alphabet (D’Alphabet) Basic Letters &amp; Pronunciation Special Characters Basic Introduction A: Bonjour, ech sinn&hellip;</p><a href="https://armanruet.github.io/Luxembourgish/luxembourgish-a1-class-3.html" class="read-more">Read more &#8594;</a></div></div></div></article><article class="post"><div class="post-content-wrapper"><div class="post-meta-wrapper"><div class="post-category">LUXEMBOURGISH LEARNING</div><h2 class="post__title"><a href="https://armanruet.github.io/Luxembourgish/luxembourgish-letzebuergesch-learning-guide-class-2.html">Luxembourgish A1 : Class 2</a></h2><div class="post__meta"><time datetime="2025-01-22T08:57" class="post__date">January 22, 2025 </time><a href="https://armanruet.github.io/Luxembourgish/authors/arman-hossen/" class="post__author">Arman Hossen</a></div><div class="post__tags"></div><div class="post__content"><p>1. Learning Objectives (Léierziler) Saying hello and goodbye (Moien an Äddi soen) Asking and telling how one is doing (Soen a froen, wéi et geet)&hellip;</p><a href="https://armanruet.github.io/Luxembourgish/luxembourgish-letzebuergesch-learning-guide-class-2.html" class="read-more">Read more &#8594;</a></div></div></div></article><article class="post"><div class="post-content-wrapper"><div class="post-meta-wrapper"><div class="post-category">LUXEMBOURGISH LEARNING</div><h2 class="post__title"><a href="https://armanruet.github.io/Luxembourgish/test.html">Test</a></h2><div class="post__meta"><time datetime="2025-01-19T01:37" class="post__date">January 19, 2025 </time><a href="https://armanruet.github.io/Luxembourgish/authors/arman-hossen/" class="post__author">Arman Hossen</a></div><div class="post__tags"></div><div class="post__content"><p>Introduction to Basic Conversations Understanding basic conversations in Luxembourgish is essential for daily interactions. This lesson covers fundamental questions and responses for personal introductions. Asking&hellip;</p><a href="https://armanruet.github.io/Luxembourgish/test.html" class="read-more">Read more &#8594;</a></div></div></div></article><article class="post"><div class="post-content-wrapper"><div class="post-meta-wrapper"><div class="post-category">LUXEMBOURGISH LEARNING</div><h2 class="post__title"><a href="https://armanruet.github.io/Luxembourgish/luxembourgish-language-class-1-a1-detailed-notes.html"> Luxembourgish A1 : Class 1</a></h2><div class="post__meta"><time datetime="2025-01-18T23:54" class="post__date">January 18, 2025 </time><a href="https://armanruet.github.io/Luxembourgish/authors/arman-hossen/" class="post__author">Arman Hossen</a></div><div class="post__tags"></div><div class="post__content"><p>Introduction to Basic Conversations Understanding basic conversations in Luxembourgish is essential for daily interactions. This lesson covers fundamental questions and responses for personal introductions. Asking&hellip;</p><a href="https://armanruet.github.io/Luxembourgish/luxembourgish-language-class-1-a1-detailed-notes.html" class="read-more">Read more &#8594;</a></div></div><div class="post__image"><img src="https://armanruet.github.io/Luxembourgish/media/posts/1/class_1.png" srcset="https://armanruet.github.io/Luxembourgish/media/posts/1/responsive/class_1-xs.png 300w, https://armanruet.github.io/Luxembourgish/media/posts/1/responsive/class_1-sm.png 480w, https://armanruet.github.io/Luxembourgish/media/posts/1/responsive/class_1-md.png 768w, https://armanruet.github.io/Luxembourgish/media/posts/1/responsive/class_1-lg.png 1024w" sizes="(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)" loading="lazy" alt=""></div></div></article></div></main><footer class="footer"><div class="footer__inner"><div class="footer__copyright"><p>© 2025 Powered by Publii CMS :: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank" rel="noopener">Theme</a> ported by the <a href="https://getpublii.com/customization-service/" target="_blank" rel="noopener">Publii Team</a></p></div></div></footer></div><script defer="defer" src="https://armanruet.github.io/Luxembourgish/assets/js/scripts.min.js?v=c2232aa7558e9517946129d2a1b8c770"></script><script>window.publiiThemeMenuConfig={mobileMenuMode:'sidebar',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script><script>var images = document.querySelectorAll('img[loading]');
         for (var i = 0; i < images.length; i++) {
             if (images[i].complete) {
                 images[i].classList.add('is-loaded');

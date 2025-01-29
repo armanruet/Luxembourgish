@@ -84,6 +84,7 @@
 
     // Image Modal Setup
     if (!document.querySelector('.image-modal')) {
+        // Create and add modal to DOM
         const modal = document.createElement('div');
         modal.className = 'image-modal';
         modal.innerHTML = `
@@ -97,10 +98,48 @@
         const modalImg = modal.querySelector('img');
         const closeBtn = modal.querySelector('.modal-close');
 
+        // Function to initialize image click handlers
+        function initializeImageHandlers() {
+            // Select all blog post images
+            const blogImages = document.querySelectorAll('img');
+            console.log('Found images:', blogImages.length);
+
+            blogImages.forEach(img => {
+                // Add click event
+                img.style.cursor = 'pointer';
+                img.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    console.log('Image clicked:', this.src);
+                    modal.classList.add('show');
+                    modalImg.src = this.src;
+                    enableZoom(modalImg);
+                });
+            });
+        }
+
+        // Initialize immediately and watch for changes
+        initializeImageHandlers();
+        
+        // Watch for dynamically added images
+        const observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                if (mutation.addedNodes.length) {
+                    initializeImageHandlers();
+                }
+            });
+        });
+
+        observer.observe(document.body, { childList: true, subtree: true });
+
         function closeModal() {
             modal.classList.remove('show');
             modalImg.style.transform = 'scale(1)';
         }
+
+        closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) closeModal();
+        });
 
         function enableZoom(img) {
             let scale = 1;
@@ -157,23 +196,68 @@
             const dy = touch1.pageY - touch2.pageY;
             return Math.sqrt(dx * dx + dy * dy);
         }
-
-        // Add click handlers to post images
-        document.querySelectorAll('.post-single .post__image img').forEach(img => {
-            img.addEventListener('click', function() {
-                modal.classList.add('show');
-                modalImg.src = this.src;
-                enableZoom(modalImg);
-            });
-        });
-
-        // Close modal handlers
-        closeBtn.addEventListener('click', closeModal);
-        modal.addEventListener('click', function(e) {
-            if (e.target === modal) closeModal();
-        });
     }
-});</script><header class="header"><div class="header__logo"><a class="logo" href="https://armanruet.github.io/Luxembourgish/">Luxembourgish</a></div></header><main class="content"><article class="post"><header><h1 class="post__title">Luxembourgish A1 : Class 4</h1><div class="post__meta"><time datetime="2025-01-28T23:35" class="post__date">January 28, 2025 </time><span class="post__author"><a href="https://armanruet.github.io/Luxembourgish/authors/arman-hossen/" class="feed__author">Arman Hossen</a></span></div></header><div class="post__entry"><h2 id="table-of-contents">Table of Contents</h2><ol><li><a href="#1-countries-people-and-languages">Countries, People and Languages</a></li><li><a href="#2-grammar-rules">Grammar Rules</a></li><li><a href="#3-vocabulary">Vocabulary</a></li><li><a href="#4-exercises">Exercises</a></li><li><a href="#5-cultural-notes">Cultural Notes</a></li></ol><h2 id="1-countries-people-and-languages">1. Countries, People and Languages</h2><h3 id="country-nationality-language-table">Country-Nationality-Language Table</h3><table><thead><tr><th>Land (Country)</th><th>De Mann (m)</th><th>D’Fra (f)</th><th>Si schwätzen (Language)</th></tr></thead><tbody><tr><td>Lëtzebuerg</td><td>Lëtzebuerger</td><td>Lëtzebuergerin</td><td>Lëtzebuergesch</td></tr><tr><td>Portugal</td><td>Portugis</td><td>Portugisin</td><td>Portugisesch</td></tr><tr><td>Frankräich</td><td>Fransous</td><td>Franséisin</td><td>Franséisch</td></tr><tr><td>Italien</td><td>Italieener</td><td>Italieenerin</td><td>Italieenesch</td></tr><tr><td>Spuenien</td><td>Spuenier</td><td>Spuenierin</td><td>Spuenesch</td></tr><tr><td>Däitschland</td><td>Däitschen</td><td>Däitsch</td><td>Däitsch</td></tr><tr><td>Belsch</td><td>Belsch</td><td>Belsch</td><td>-</td></tr></tbody></table><h3 id="sample-dialogues">Sample Dialogues</h3><ol><li><p><strong>Dialog 1:</strong></p><pre><code>- Ech sinn de Sascha Smirnov.
+});</script><style>/* Image modal styles */
+.image-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.image-modal.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.modal-content img {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+    transform-origin: center;
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10000;
+    padding: 0.5rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Make images clickable */
+.post__image img {
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.post__image img:active {
+    opacity: 0.8;
+}</style><header class="header"><div class="header__logo"><a class="logo" href="https://armanruet.github.io/Luxembourgish/">Luxembourgish</a></div></header><main class="content"><article class="post"><header><h1 class="post__title">Luxembourgish A1 : Class 4</h1><div class="post__meta"><time datetime="2025-01-28T23:35" class="post__date">January 28, 2025 </time><span class="post__author"><a href="https://armanruet.github.io/Luxembourgish/authors/arman-hossen/" class="feed__author">Arman Hossen</a></span></div></header><div class="post__entry"><h2 id="table-of-contents">Table of Contents</h2><ol><li><a href="#1-countries-people-and-languages">Countries, People and Languages</a></li><li><a href="#2-grammar-rules">Grammar Rules</a></li><li><a href="#3-vocabulary">Vocabulary</a></li><li><a href="#4-exercises">Exercises</a></li><li><a href="#5-cultural-notes">Cultural Notes</a></li></ol><h2 id="1-countries-people-and-languages">1. Countries, People and Languages</h2><h3 id="country-nationality-language-table">Country-Nationality-Language Table</h3><table><thead><tr><th>Land (Country)</th><th>De Mann (m)</th><th>D’Fra (f)</th><th>Si schwätzen (Language)</th></tr></thead><tbody><tr><td>Lëtzebuerg</td><td>Lëtzebuerger</td><td>Lëtzebuergerin</td><td>Lëtzebuergesch</td></tr><tr><td>Portugal</td><td>Portugis</td><td>Portugisin</td><td>Portugisesch</td></tr><tr><td>Frankräich</td><td>Fransous</td><td>Franséisin</td><td>Franséisch</td></tr><tr><td>Italien</td><td>Italieener</td><td>Italieenerin</td><td>Italieenesch</td></tr><tr><td>Spuenien</td><td>Spuenier</td><td>Spuenierin</td><td>Spuenesch</td></tr><tr><td>Däitschland</td><td>Däitschen</td><td>Däitsch</td><td>Däitsch</td></tr><tr><td>Belsch</td><td>Belsch</td><td>Belsch</td><td>-</td></tr></tbody></table><h3 id="sample-dialogues">Sample Dialogues</h3><ol><li><p><strong>Dialog 1:</strong></p><pre><code>- Ech sinn de Sascha Smirnov.
 - Ech kommen aus Russland, vu Moskau.
 - Meng Fra ass Polin.
 - Mir schwätze Russesch a Polnesch doheem.
