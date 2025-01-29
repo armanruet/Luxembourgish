@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en-gb"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Author: Arman Hossen - Luxembourgish</title><meta name="robots" content="noindex, follow"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="alternate" type="application/atom+xml" href="https://armanruet.github.io/Luxembourgish/feed.xml"><link rel="alternate" type="application/json" href="https://armanruet.github.io/Luxembourgish/feed.json"><meta property="og:title" content="Arman Hossen"><meta property="og:site_name" content="Luxembourgish"><meta property="og:description" content=""><meta property="og:url" content="https://armanruet.github.io/Luxembourgish/authors/arman-hossen/"><meta property="og:type" content="website"><link rel="shortcut icon" href="https://armanruet.github.io/Luxembourgish/media/website/luxembourg.ico" type="image/x-icon"><link rel="preload" href="https://armanruet.github.io/Luxembourgish/assets/dynamic/fonts/jetbrainsmono/jetbrainsmono.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://armanruet.github.io/Luxembourgish/assets/dynamic/fonts/jetbrainsmono/jetbrainsmono-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="https://armanruet.github.io/Luxembourgish/assets/css/style.css?v=d216b3ec97e91ec647f302036de45030"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Organization","name":"Luxembourgish","url":"https://armanruet.github.io/Luxembourgish/"}</script><noscript><style>img[loading] {
                     opacity: 1;
                 }</style></noscript><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"></head><body class="author-template"><div class="container"><script>document.addEventListener('DOMContentLoaded', () => {
-    // Only create button if it doesn't exist
+    // Theme Toggle Setup
     if (!document.querySelector('.theme-toggle')) {
         const toggleButton = document.createElement('button');
         toggleButton.className = 'theme-toggle';
@@ -23,23 +23,19 @@
             </svg>
         `;
         
-        // Add button to DOM
         document.body.appendChild(toggleButton);
         
-        // Toggle theme function with smooth transition
         function toggleTheme() {
             const isDark = document.body.classList.toggle('dark-mode');
             localStorage.setItem('theme', isDark ? 'dark' : 'light');
             updateIcon(isDark);
             
-            // Add transition class
             document.body.classList.add('theme-transition');
             setTimeout(() => {
                 document.body.classList.remove('theme-transition');
             }, 300);
         }
         
-        // Update icon based on theme with smooth transition
         function updateIcon(isDark) {
             const sunIcon = toggleButton.querySelector('.sun-icon');
             const moonIcon = toggleButton.querySelector('.moon-icon');
@@ -47,18 +43,16 @@
             if (isDark) {
                 sunIcon.style.display = 'none';
                 moonIcon.style.display = 'block';
-                moonIcon.style.color = '#ff9776'; // Light orange for dark mode
+                moonIcon.style.color = '#ff9776';
             } else {
                 moonIcon.style.display = 'none';
                 sunIcon.style.display = 'block';
-                sunIcon.style.color = '#ff7846'; // Orange for light mode
+                sunIcon.style.color = '#ff7846';
             }
         }
         
-        // Add click event listener
         toggleButton.addEventListener('click', toggleTheme);
         
-        // Check saved theme preference
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme) {
             if (savedTheme === 'dark') {
@@ -69,14 +63,12 @@
             }
         }
         
-        // Check system preference
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
         if (!savedTheme && prefersDark.matches) {
             document.body.classList.add('dark-mode');
             updateIcon(true);
         }
         
-        // Listen for system theme changes
         prefersDark.addListener((e) => {
             if (!localStorage.getItem('theme')) {
                 if (e.matches) {
@@ -87,6 +79,98 @@
                     updateIcon(false);
                 }
             }
+        });
+    }
+
+    // Image Modal Setup
+    if (!document.querySelector('.image-modal')) {
+        const modal = document.createElement('div');
+        modal.className = 'image-modal';
+        modal.innerHTML = `
+            <button class="modal-close">×</button>
+            <div class="modal-content">
+                <img src="" alt="Preview">
+            </div>
+        `;
+        document.body.appendChild(modal);
+
+        const modalImg = modal.querySelector('img');
+        const closeBtn = modal.querySelector('.modal-close');
+
+        function closeModal() {
+            modal.classList.remove('show');
+            modalImg.style.transform = 'scale(1)';
+        }
+
+        function enableZoom(img) {
+            let scale = 1;
+            let translateX = 0;
+            let translateY = 0;
+            let startX = 0;
+            let startY = 0;
+            let initialDistance = 0;
+            let currentScale = 1;
+
+            img.addEventListener('touchstart', function(e) {
+                if (e.touches.length === 2) {
+                    e.preventDefault();
+                    initialDistance = getDistance(e.touches[0], e.touches[1]);
+                } else if (e.touches.length === 1) {
+                    startX = e.touches[0].pageX - translateX;
+                    startY = e.touches[0].pageY - translateY;
+                }
+            });
+
+            img.addEventListener('touchmove', function(e) {
+                e.preventDefault();
+                if (e.touches.length === 2) {
+                    const distance = getDistance(e.touches[0], e.touches[1]);
+                    const newScale = (distance / initialDistance) * scale;
+                    if (newScale >= 1 && newScale <= 4) {
+                        currentScale = newScale;
+                        img.style.transform = `scale(${currentScale}) translate(${translateX}px, ${translateY}px)`;
+                    }
+                } else if (e.touches.length === 1 && currentScale > 1) {
+                    translateX = e.touches[0].pageX - startX;
+                    translateY = e.touches[0].pageY - startY;
+                    img.style.transform = `scale(${currentScale}) translate(${translateX}px, ${translateY}px)`;
+                }
+            });
+
+            let lastTap = 0;
+            img.addEventListener('touchend', function(e) {
+                const currentTime = new Date().getTime();
+                const tapLength = currentTime - lastTap;
+                if (tapLength < 300 && tapLength > 0) {
+                    scale = 1;
+                    translateX = 0;
+                    translateY = 0;
+                    currentScale = 1;
+                    img.style.transform = 'scale(1) translate(0, 0)';
+                }
+                lastTap = currentTime;
+            });
+        }
+
+        function getDistance(touch1, touch2) {
+            const dx = touch1.pageX - touch2.pageX;
+            const dy = touch1.pageY - touch2.pageY;
+            return Math.sqrt(dx * dx + dy * dy);
+        }
+
+        // Add click handlers to post images
+        document.querySelectorAll('.post-single .post__image img').forEach(img => {
+            img.addEventListener('click', function() {
+                modal.classList.add('show');
+                modalImg.src = this.src;
+                enableZoom(modalImg);
+            });
+        });
+
+        // Close modal handlers
+        closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) closeModal();
         });
     }
 });</script><header class="header"><div class="header__logo"><a class="logo" href="https://armanruet.github.io/Luxembourgish/">Luxembourgish</a></div></header><main class="content page page--author"><div class="page__header hero page--author__header"><div class="page--author__top"><img src="https://armanruet.github.io/Luxembourgish/media/website/medium_profile.webp" loading="lazy" height="1312" width="736" class="page--author__avatar" alt="Arman Hossen"><h1 class="h2 page__title">Arman Hossen <sup>(5 Posts)</sup></h1></div><div class="page--author__website"><a href="https://armanruet.github.io/" target="_blank" rel="nofollow noreferrer noopener">Visit website &#8599;</a></div></div><div class="posts"><article class="post"><header><h2 class="h1 post__title"><a href="https://armanruet.github.io/Luxembourgish/luxembourgish-language-learning-notes-class-4.html">Luxembourgish A1 : Class 4</a></h2><div class="post__meta"><time datetime="2025-01-28T23:35" class="post__date">January 28, 2025 </time><a href="https://armanruet.github.io/Luxembourgish/authors/arman-hossen/" class="post__author">Arman Hossen</a></div><div class="post__tags"></div></header><div class="post__content"><p>Table of Contents Countries, People and Languages Grammar Rules Vocabulary Exercises Cultural Notes 1. Countries, People and Languages Country-Nationality-Language Table Land (Country) De Mann (m)&hellip;</p><a href="https://armanruet.github.io/Luxembourgish/luxembourgish-language-learning-notes-class-4.html" class="read-more">Read more &#8594;</a></div></article><article class="post"><header><h2 class="h1 post__title"><a href="https://armanruet.github.io/Luxembourgish/luxembourgish-a1-class-3.html">Luxembourgish A1 : Class 3</a></h2><div class="post__meta"><time datetime="2025-01-28T00:29" class="post__date">January 28, 2025 </time><a href="https://armanruet.github.io/Luxembourgish/authors/arman-hossen/" class="post__author">Arman Hossen</a></div><div class="post__tags"></div></header><div class="post__content"><p>Luxembourgish A1 - Comprehensive Study Guide 1. Basic Language Structure 1.1 Alphabet (D’Alphabet) Basic Letters &amp; Pronunciation Special Characters Basic Introduction A: Bonjour, ech sinn&hellip;</p><a href="https://armanruet.github.io/Luxembourgish/luxembourgish-a1-class-3.html" class="read-more">Read more &#8594;</a></div></article><article class="post"><header><h2 class="h1 post__title"><a href="https://armanruet.github.io/Luxembourgish/luxembourgish-letzebuergesch-learning-guide-class-2.html">Luxembourgish A1 : Class 2</a></h2><div class="post__meta"><time datetime="2025-01-22T08:57" class="post__date">January 22, 2025 </time><a href="https://armanruet.github.io/Luxembourgish/authors/arman-hossen/" class="post__author">Arman Hossen</a></div><div class="post__tags"></div></header><div class="post__content"><p>1. Learning Objectives (Léierziler) Saying hello and goodbye (Moien an Äddi soen) Asking and telling how one is doing (Soen a froen, wéi et geet)&hellip;</p><a href="https://armanruet.github.io/Luxembourgish/luxembourgish-letzebuergesch-learning-guide-class-2.html" class="read-more">Read more &#8594;</a></div></article><article class="post"><header><h2 class="h1 post__title"><a href="https://armanruet.github.io/Luxembourgish/test.html">Test</a></h2><div class="post__meta"><time datetime="2025-01-19T01:37" class="post__date">January 19, 2025 </time><a href="https://armanruet.github.io/Luxembourgish/authors/arman-hossen/" class="post__author">Arman Hossen</a></div><div class="post__tags"></div></header><div class="post__content"><p>Introduction to Basic Conversations Understanding basic conversations in Luxembourgish is essential for daily interactions. This lesson covers fundamental questions and responses for personal introductions. Asking&hellip;</p><a href="https://armanruet.github.io/Luxembourgish/test.html" class="read-more">Read more &#8594;</a></div></article><article class="post"><header><h2 class="h1 post__title"><a href="https://armanruet.github.io/Luxembourgish/luxembourgish-language-class-1-a1-detailed-notes.html"> Luxembourgish A1 : Class 1</a></h2><div class="post__meta"><time datetime="2025-01-18T23:54" class="post__date">January 18, 2025 </time><a href="https://armanruet.github.io/Luxembourgish/authors/arman-hossen/" class="post__author">Arman Hossen</a></div><div class="post__tags"></div></header><figure class="post__image post__cover"><img src="https://armanruet.github.io/Luxembourgish/media/posts/1/class_1.png" srcset="https://armanruet.github.io/Luxembourgish/media/posts/1/responsive/class_1-xs.png 300w, https://armanruet.github.io/Luxembourgish/media/posts/1/responsive/class_1-sm.png 480w, https://armanruet.github.io/Luxembourgish/media/posts/1/responsive/class_1-md.png 768w, https://armanruet.github.io/Luxembourgish/media/posts/1/responsive/class_1-lg.png 1024w" sizes="(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)" loading="lazy" height="1316" width="1514" alt=""></figure><div class="post__content"><p>Introduction to Basic Conversations Understanding basic conversations in Luxembourgish is essential for daily interactions. This lesson covers fundamental questions and responses for personal introductions. Asking&hellip;</p><a href="https://armanruet.github.io/Luxembourgish/luxembourgish-language-class-1-a1-detailed-notes.html" class="read-more">Read more &#8594;</a></div></article></div></main><footer class="footer"><div class="footer__inner"><div class="footer__copyright"><p>© 2025 Powered by Publii CMS :: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank" rel="noopener">Theme</a> ported by the <a href="https://getpublii.com/customization-service/" target="_blank" rel="noopener">Publii Team</a></p></div></div></footer></div><script defer="defer" src="https://armanruet.github.io/Luxembourgish/assets/js/scripts.min.js?v=c2232aa7558e9517946129d2a1b8c770"></script><script>window.publiiThemeMenuConfig={mobileMenuMode:'sidebar',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script><script>var images = document.querySelectorAll('img[loading]');

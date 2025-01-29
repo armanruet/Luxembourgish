@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en-gb"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Luxembourgish A1 : Class 3 - Luxembourgish</title><meta name="description" content="Luxembourgish A1 - Comprehensive Study Guide 1. Basic Language Structure 1.1 Alphabet (D’Alphabet) Basic Letters &amp; Pronunciation Special Characters Basic Introduction A: Bonjour, ech sinn&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://armanruet.github.io/Luxembourgish/luxembourgish-a1-class-3.html"><link rel="alternate" type="application/atom+xml" href="https://armanruet.github.io/Luxembourgish/feed.xml"><link rel="alternate" type="application/json" href="https://armanruet.github.io/Luxembourgish/feed.json"><meta property="og:title" content="Luxembourgish A1 : Class 3"><meta property="og:site_name" content="Luxembourgish"><meta property="og:description" content="Luxembourgish A1 - Comprehensive Study Guide 1. Basic Language Structure 1.1 Alphabet (D’Alphabet) Basic Letters &amp; Pronunciation Special Characters Basic Introduction A: Bonjour, ech sinn&hellip;"><meta property="og:url" content="https://armanruet.github.io/Luxembourgish/luxembourgish-a1-class-3.html"><meta property="og:type" content="article"><link rel="shortcut icon" href="https://armanruet.github.io/Luxembourgish/media/website/luxembourg.ico" type="image/x-icon"><link rel="preload" href="https://armanruet.github.io/Luxembourgish/assets/dynamic/fonts/jetbrainsmono/jetbrainsmono.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://armanruet.github.io/Luxembourgish/assets/dynamic/fonts/jetbrainsmono/jetbrainsmono-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="https://armanruet.github.io/Luxembourgish/assets/css/style.css?v=d216b3ec97e91ec647f302036de45030"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://armanruet.github.io/Luxembourgish/luxembourgish-a1-class-3.html"},"headline":"Luxembourgish A1 : Class 3","datePublished":"2025-01-28T00:29+01:00","dateModified":"2025-01-28T23:46+01:00","description":"Luxembourgish A1 - Comprehensive Study Guide 1. Basic Language Structure 1.1 Alphabet (D’Alphabet) Basic Letters &amp; Pronunciation Special Characters Basic Introduction A: Bonjour, ech sinn&hellip;","author":{"@type":"Person","name":"Arman Hossen","url":"https://armanruet.github.io/Luxembourgish/authors/arman-hossen/"},"publisher":{"@type":"Organization","name":"Arman Hossen"}}</script><noscript><style>img[loading] {
                     opacity: 1;
                 }</style></noscript><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"></head><body class="post-template"><div class="container"><script>document.addEventListener('DOMContentLoaded', () => {
-    // Only create button if it doesn't exist
+    // Theme Toggle Setup
     if (!document.querySelector('.theme-toggle')) {
         const toggleButton = document.createElement('button');
         toggleButton.className = 'theme-toggle';
@@ -23,23 +23,19 @@
             </svg>
         `;
         
-        // Add button to DOM
         document.body.appendChild(toggleButton);
         
-        // Toggle theme function with smooth transition
         function toggleTheme() {
             const isDark = document.body.classList.toggle('dark-mode');
             localStorage.setItem('theme', isDark ? 'dark' : 'light');
             updateIcon(isDark);
             
-            // Add transition class
             document.body.classList.add('theme-transition');
             setTimeout(() => {
                 document.body.classList.remove('theme-transition');
             }, 300);
         }
         
-        // Update icon based on theme with smooth transition
         function updateIcon(isDark) {
             const sunIcon = toggleButton.querySelector('.sun-icon');
             const moonIcon = toggleButton.querySelector('.moon-icon');
@@ -47,18 +43,16 @@
             if (isDark) {
                 sunIcon.style.display = 'none';
                 moonIcon.style.display = 'block';
-                moonIcon.style.color = '#ff9776'; // Light orange for dark mode
+                moonIcon.style.color = '#ff9776';
             } else {
                 moonIcon.style.display = 'none';
                 sunIcon.style.display = 'block';
-                sunIcon.style.color = '#ff7846'; // Orange for light mode
+                sunIcon.style.color = '#ff7846';
             }
         }
         
-        // Add click event listener
         toggleButton.addEventListener('click', toggleTheme);
         
-        // Check saved theme preference
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme) {
             if (savedTheme === 'dark') {
@@ -69,14 +63,12 @@
             }
         }
         
-        // Check system preference
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
         if (!savedTheme && prefersDark.matches) {
             document.body.classList.add('dark-mode');
             updateIcon(true);
         }
         
-        // Listen for system theme changes
         prefersDark.addListener((e) => {
             if (!localStorage.getItem('theme')) {
                 if (e.matches) {
@@ -87,6 +79,98 @@
                     updateIcon(false);
                 }
             }
+        });
+    }
+
+    // Image Modal Setup
+    if (!document.querySelector('.image-modal')) {
+        const modal = document.createElement('div');
+        modal.className = 'image-modal';
+        modal.innerHTML = `
+            <button class="modal-close">×</button>
+            <div class="modal-content">
+                <img src="" alt="Preview">
+            </div>
+        `;
+        document.body.appendChild(modal);
+
+        const modalImg = modal.querySelector('img');
+        const closeBtn = modal.querySelector('.modal-close');
+
+        function closeModal() {
+            modal.classList.remove('show');
+            modalImg.style.transform = 'scale(1)';
+        }
+
+        function enableZoom(img) {
+            let scale = 1;
+            let translateX = 0;
+            let translateY = 0;
+            let startX = 0;
+            let startY = 0;
+            let initialDistance = 0;
+            let currentScale = 1;
+
+            img.addEventListener('touchstart', function(e) {
+                if (e.touches.length === 2) {
+                    e.preventDefault();
+                    initialDistance = getDistance(e.touches[0], e.touches[1]);
+                } else if (e.touches.length === 1) {
+                    startX = e.touches[0].pageX - translateX;
+                    startY = e.touches[0].pageY - translateY;
+                }
+            });
+
+            img.addEventListener('touchmove', function(e) {
+                e.preventDefault();
+                if (e.touches.length === 2) {
+                    const distance = getDistance(e.touches[0], e.touches[1]);
+                    const newScale = (distance / initialDistance) * scale;
+                    if (newScale >= 1 && newScale <= 4) {
+                        currentScale = newScale;
+                        img.style.transform = `scale(${currentScale}) translate(${translateX}px, ${translateY}px)`;
+                    }
+                } else if (e.touches.length === 1 && currentScale > 1) {
+                    translateX = e.touches[0].pageX - startX;
+                    translateY = e.touches[0].pageY - startY;
+                    img.style.transform = `scale(${currentScale}) translate(${translateX}px, ${translateY}px)`;
+                }
+            });
+
+            let lastTap = 0;
+            img.addEventListener('touchend', function(e) {
+                const currentTime = new Date().getTime();
+                const tapLength = currentTime - lastTap;
+                if (tapLength < 300 && tapLength > 0) {
+                    scale = 1;
+                    translateX = 0;
+                    translateY = 0;
+                    currentScale = 1;
+                    img.style.transform = 'scale(1) translate(0, 0)';
+                }
+                lastTap = currentTime;
+            });
+        }
+
+        function getDistance(touch1, touch2) {
+            const dx = touch1.pageX - touch2.pageX;
+            const dy = touch1.pageY - touch2.pageY;
+            return Math.sqrt(dx * dx + dy * dy);
+        }
+
+        // Add click handlers to post images
+        document.querySelectorAll('.post-single .post__image img').forEach(img => {
+            img.addEventListener('click', function() {
+                modal.classList.add('show');
+                modalImg.src = this.src;
+                enableZoom(modalImg);
+            });
+        });
+
+        // Close modal handlers
+        closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) closeModal();
         });
     }
 });</script><header class="header"><div class="header__logo"><a class="logo" href="https://armanruet.github.io/Luxembourgish/">Luxembourgish</a></div></header><main class="content"><article class="post"><header><h1 class="post__title">Luxembourgish A1 : Class 3</h1><div class="post__meta"><time datetime="2025-01-28T00:29" class="post__date">January 28, 2025 </time><span class="post__author"><a href="https://armanruet.github.io/Luxembourgish/authors/arman-hossen/" class="feed__author">Arman Hossen</a></span></div></header><div class="post__entry"><h1 id="luxembourgish-a1---comprehensive-study-guide">Luxembourgish A1 - Comprehensive Study Guide</h1><h2 id="1-basic-language-structure">1. Basic Language Structure</h2><h3 id="11-alphabet-dalphabet">1.1 Alphabet (D’Alphabet)</h3><ul><li><p><strong>Basic Letters &amp; Pronunciation</strong></p><ul><li>A (a), B (bee), C (tsee), D (dee)</li><li>E (ee), F (eff), G (gee), H (ha)</li><li>I (i), J (jott), K (ka), L (ell)</li><li>M (emm), N (enn), O (o), P (pee)</li><li>Q (ku), R (är), S (ess), T (tee)</li><li>U (u), V (fau), W (wee), X (iks)</li><li>Y (igrek), Z (tsett)</li></ul></li><li><p><strong>Special Characters</strong></p><ul><li>Ä (A mat Trema) - like ‘a’ in ‘cat’</li><li>Ë (E mat Trema) - like ‘u’ in ‘but’</li><li>É (E mat Accent aigu) - like ‘ay’ in ‘say’</li><li>È (E mat Accent grave) - like ‘e’ in ‘bed’</li><li>Ö (O mat Trema) - like ‘u’ in ‘fur’</li><li>Ü (U mat Trema) - like ‘ue’ in ‘blue’</li></ul></li></ul><h3 id="12-essential-grammar-rules">1.2 Essential Grammar Rules</h3><h4 id="n-rule-n-reegel">N-Rule (n-Reegel)</h4><ul><li><strong>Add ‘n’ before:</strong><ul><li>Vowels: A, E, I, O, U, (Y)</li><li>Consonants: D, H, N, T, Z</li></ul></li><li><strong>No ‘n’ before:</strong><ul><li>B, C, F, G, J, K, L, M, P, Q, R, S, V, W, X, (Y)</li></ul></li></ul><h4 id="articles-with-names">Articles with Names</h4><ul><li><strong>Masculine:</strong><ul><li>den + name (den Tom)</li><li>de + name (de Paul)</li></ul></li><li><strong>Feminine:</strong><ul><li>d’ + name (d’Sandra)</li><li>d’ + name (d’Marie)</li></ul></li></ul><h2 id="2-communication">2. Communication</h2><h3 id="21-formal-dialogues">2.1 Formal Dialogues</h3><ol><li><p><strong>Basic Introduction</strong></p><pre><code>A: Bonjour, ech sinn d&#39;Madamm Meyer.
