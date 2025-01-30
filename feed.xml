@@ -3,12 +3,37 @@
     <title>Luxembourgish</title>
     <link href="https://armanruet.github.io/Luxembourgish/feed.xml" rel="self" />
     <link href="https://armanruet.github.io/Luxembourgish" />
-    <updated>2025-01-28T23:46:57+01:00</updated>
+    <updated>2025-01-30T11:23:59+01:00</updated>
     <author>
         <name>Arman Hossen</name>
     </author>
     <id>https://armanruet.github.io/Luxembourgish</id>
 
+    <entry>
+        <title>cehch</title>
+        <author>
+            <name>Arman Hossen</name>
+        </author>
+        <link href="https://armanruet.github.io/Luxembourgish/cehch.html"/>
+        <id>https://armanruet.github.io/Luxembourgish/cehch.html</id>
+
+        <updated>2025-01-30T11:23:31+01:00</updated>
+            <summary>
+                <![CDATA[
+                    Table of Contents Countries, People and Languages Grammar Rules Vocabulary [Your full content here…]
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <!--excerpt-->
+<p>Table of Contents Countries, People and Languages Grammar Rules Vocabulary </p><!--/excerpt-->
+
+<h1 id="luxembourgish-a1--class-4">Luxembourgish A1 : Class 4</h1>
+<h2 id="1-countries-people-and-languages">1. Countries, People and Languages</h2>
+<p>[Your full content here…]</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Luxembourgish A1 : Class 4</title>
         <author>
@@ -20,12 +45,15 @@
         <updated>2025-01-28T23:35:51+01:00</updated>
             <summary>
                 <![CDATA[
-                    Table of Contents Countries, People and Languages Grammar Rules Vocabulary Exercises Cultural Notes 1. Countries, People and Languages Country-Nationality-Language Table Land (Country) De Mann (m)&hellip;
+                    This lesson covers basic Luxembourgish greetings and introductions. Dialog 1: - Ech sinn de Sascha Smirnov. - Ech kommen aus Russland, vu Moskau. - Meng&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <h2 id="table-of-contents">Table of Contents</h2>
+                <!--excerpt-->
+<p>This lesson covers basic Luxembourgish greetings and introductions.</p><!--/excerpt-->
+
+<h2 id="table-of-contents">Table of Contents</h2>
 <ol>
 <li><a href="#1-countries-people-and-languages">Countries, People and Languages</a></li>
 <li><a href="#2-grammar-rules">Grammar Rules</a></li>
