@@ -3,34 +3,233 @@
     <title>Luxembourgish</title>
     <link href="https://armanruet.github.io/Luxembourgish/feed.xml" rel="self" />
     <link href="https://armanruet.github.io/Luxembourgish" />
-    <updated>2025-01-31T13:45:28+01:00</updated>
+    <updated>2025-01-31T23:48:44+01:00</updated>
     <author>
         <name>Arman Hossen</name>
     </author>
     <id>https://armanruet.github.io/Luxembourgish</id>
 
     <entry>
-        <title>cehch</title>
+        <title>Luxembourgish A1 : Class 5</title>
         <author>
             <name>Arman Hossen</name>
         </author>
-        <link href="https://armanruet.github.io/Luxembourgish/cehch.html"/>
-        <id>https://armanruet.github.io/Luxembourgish/cehch.html</id>
+        <link href="https://armanruet.github.io/Luxembourgish/class5.html"/>
+        <id>https://armanruet.github.io/Luxembourgish/class5.html</id>
 
-        <updated>2025-01-30T11:23:31+01:00</updated>
+        <updated>2025-01-31T22:45:10+01:00</updated>
             <summary>
                 <![CDATA[
-                    Table of Contents Countries, People and Languages Grammar Rules Vocabulary Luxembourgish A1 : Class 4 1. Countries, People and Languages
+                    Table of Contents Basic Grammar Rules Vocabulary Dialogues and Conversations Luxembourg Geography and Culture Practice Exercises Pronunciation Guide Basic Grammar Rules The N-Rule (n-Reegel) Add&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <!--excerpt-->
-<p>Table of Contents Countries, People and Languages Grammar Rules Vocabulary </p><!--/excerpt-->
-
-
-<h1 id="luxembourgish-a1--class-4">Luxembourgish A1 : Class 4</h1>
-<h2 id="1-countries-people-and-languages">1. Countries, People and Languages</h2>
+                <h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li><a href="#basic-grammar-rules">Basic Grammar Rules</a></li>
+<li><a href="#vocabulary">Vocabulary</a></li>
+<li><a href="#dialogues-and-conversations">Dialogues and Conversations</a></li>
+<li><a href="#luxembourg-geography-and-culture">Luxembourg Geography and Culture</a></li>
+<li><a href="#practice-exercises">Practice Exercises</a></li>
+<li><a href="#pronunciation-guide">Pronunciation Guide</a></li>
+</ol>
+<h2 id="basic-grammar-rules">Basic Grammar Rules</h2>
+<h3 id="the-n-rule-n-reegel">The N-Rule (n-Reegel)</h3>
+<ul>
+<li>Add ‘n’ before:<ul>
+<li>Vowels (A, E, I, O, U, Y)</li>
+<li>Consonants D, H, N, T, Z</li>
+</ul>
+</li>
+<li>No ‘n’ before other consonants</li>
+</ul>
+<p>Examples:</p><ul>
+<li>een Auto (a car)</li>
+<li>en Haus (a house)</li>
+<li>e Buch (a book)</li>
+<li>en Telefon (a telephone)</li>
+</ul>
+<h3 id="negation-rules">Negation Rules</h3>
+<ol>
+<li><p><strong>keen/keng</strong> (none/not any)</p><ul>
+<li>For uncountable nouns</li>
+<li>Examples:<ul>
+<li>Ech hunn keen Honger (I have no hunger)</li>
+<li>Ech hunn keng Suen (I have no money)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>net</strong> (not)</p><ul>
+<li>For negating statements</li>
+<li>Examples:<ul>
+<li>Ech sinn net hongeresch (I’m not hungry)</li>
+<li>Ech sinn net räich (I’m not rich)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="verb-conjugation">Verb Conjugation</h3>
+<h4 id="regular-verbs-reegelméisseg-verben">Regular Verbs (Reegelméisseg Verben)</h4>
+<p>Using “schwätzen” (to speak) as example:</p><ul>
+<li>ech schwätzen</li>
+<li>du schwätz</li>
+<li>hien/si/hatt schwätzt</li>
+<li>mir schwätzen</li>
+<li>dir/Dir schwätzt</li>
+<li>si schwätzen</li>
+</ul>
+<h4 id="irregular-verbs-onreegelméisseg-verben">Irregular Verbs (Onreegelméisseg Verben)</h4>
+<p>Using “sinn” (to be) as example:</p><ul>
+<li>ech sinn</li>
+<li>du bass</li>
+<li>hien/si/hatt ass</li>
+<li>mir sinn</li>
+<li>dir/Dir sidd</li>
+<li>si sinn</li>
+</ul>
+<h2 id="vocabulary">Vocabulary</h2>
+<h3 id="personal-information">Personal Information</h3>
+<ul>
+<li>Numm - name</li>
+<li>Alter - age</li>
+<li>Nationalitéit - nationality</li>
+<li>Sprooch - language</li>
+<li>Beruff - profession</li>
+</ul>
+<h3 id="countries-and-nationalities">Countries and Nationalities</h3>
+<ul>
+<li>Lëtzebuerg - Luxembourg</li>
+<li>Däitschland - Germany</li>
+<li>Frankräich - France</li>
+<li>Portugal - Portugal</li>
+<li>Italien - Italy</li>
+</ul>
+<h3 id="languages">Languages</h3>
+<ul>
+<li>Lëtzebuergesch - Luxembourgish</li>
+<li>Däitsch - German</li>
+<li>Franséisch - French</li>
+<li>Portugisesch - Portuguese</li>
+<li>Spuenesch - Spanish</li>
+</ul>
+<h3 id="common-expressions">Common Expressions</h3>
+<ul>
+<li>Moien - Hello</li>
+<li>Äddi - Goodbye</li>
+<li>Merci - Thank you</li>
+<li>Wëllkomm - Welcome</li>
+<li>Gär geschitt - You’re welcome</li>
+</ul>
+<h2 id="dialogues-and-conversations">Dialogues and Conversations</h2>
+<h3 id="at-the-language-school-an-der-sproocheschoul">At the Language School (An der Sproocheschoul)</h3>
+<pre><code>A: Moien! Bass du nei an der Klass?
+B: Jo, ech sinn nei. Ech heeschen Sarah.
+A: Wéi laang léiers du schonn Lëtzebuergesch?
+B: Ech léieren zënter zwee Méint.
+</code></pre>
+<h3 id="basic-introduction">Basic Introduction</h3>
+<pre><code>A: Moien! Ech heeschen [Numm]. Wéi heeschs du?
+B: Ech heeschen [Numm]. Vu wou kënns du?
+A: Ech kommen aus [Land]. An du?
+B: Ech kommen aus [Land].
+</code></pre>
+<h2 id="luxembourg-geography-and-culture">Luxembourg Geography and Culture</h2>
+<h3 id="regions">Regions</h3>
+<ol>
+<li><p><strong>Éislek</strong> (Oesling)</p><ul>
+<li>Northern region</li>
+<li>Ardennes mountains</li>
+<li>Main cities: Clervaux, Vianden</li>
+</ul>
+</li>
+<li><p><strong>Guttland</strong></p><ul>
+<li>Central region</li>
+<li>Capital city: Luxembourg City</li>
+<li>Major towns: Mersch, Walferdange</li>
+</ul>
+</li>
+<li><p><strong>Musel</strong> (Moselle)</p><ul>
+<li>Eastern wine region</li>
+<li>Along German border</li>
+<li>Towns: Remich, Grevenmacher</li>
+</ul>
+</li>
+<li><p><strong>Minett</strong></p><ul>
+<li>Southern industrial region</li>
+<li>Major cities: Esch-sur-Alzette, Differdange</li>
+<li>Historical steel industry</li>
+</ul>
+</li>
+</ol>
+<h3 id="languages-in-luxembourg">Languages in Luxembourg</h3>
+<ul>
+<li>Official languages:<ul>
+<li>Lëtzebuergesch (national language)</li>
+<li>Franséisch (administrative)</li>
+<li>Däitsch (administrative and media)</li>
+</ul>
+</li>
+<li>Language use:<ul>
+<li>Schools: German and French as teaching languages</li>
+<li>Administration: Mainly French</li>
+<li>Media: Mix of all three languages</li>
+</ul>
+</li>
+</ul>
+<h2 id="practice-exercises">Practice Exercises</h2>
+<h3 id="exercise-1-present-tense">Exercise 1: Present Tense</h3>
+<p>Fill in the correct verb form:</p><ol>
+<li>Ech _____ (kommen) aus Portugal.</li>
+<li>Du _____ (schwätzen) Lëtzebuergesch.</li>
+<li>Hien _____ (heeschen) Tom.</li>
+</ol>
+<h3 id="exercise-2-negation">Exercise 2: Negation</h3>
+<p>Transform into negative sentences:</p><ol>
+<li>Ech hunn Zäit.</li>
+<li>Si schwätzt Franséisch.</li>
+<li>Mir sinn doheem.</li>
+</ol>
+<p>[See Answer Key section for solutions]</p><h2 id="pronunciation-guide">Pronunciation Guide</h2>
+<h3 id="special-characters">Special Characters</h3>
+<ul>
+<li>ë - pronounced like ‘uh’ in ‘butter’</li>
+<li>é - like ‘ay’ in ‘say’</li>
+<li>ä - like ‘e’ in ‘bed’</li>
+<li>äi - like ‘eye’</li>
+<li>ei - like ‘eye’</li>
+<li>ie - like ‘ee’ in ‘see’</li>
+<li>ou - like ‘ow’ in ‘now’</li>
+</ul>
+<h3 id="consonant-combinations">Consonant Combinations</h3>
+<ul>
+<li>ch - like German ‘ich’</li>
+<li>sch - like ‘sh’ in ‘shop’</li>
+<li>ng - like ‘ng’ in ‘sing’</li>
+</ul>
+<hr>
+<h2 id="answer-key">Answer Key</h2>
+<h3 id="exercise-1">Exercise 1:</h3>
+<ol>
+<li>kommen</li>
+<li>schwätz</li>
+<li>heescht</li>
+</ol>
+<h3 id="exercise-2">Exercise 2:</h3>
+<ol>
+<li>Ech hunn keng Zäit.</li>
+<li>Si schwätzt kee Franséisch.</li>
+<li>Mir sinn net doheem.</li>
+</ol>
+<hr>
+<h2 id="additional-resources">Additional Resources</h2>
+<ul>
+<li>LOD - Lëtzebuerger Online Dictionnaire (<a href="https://www.lod.lu">https://www.lod.lu</a>)</li>
+<li>Learn Luxembourg (<a href="https://learn.llo.lu/platform/#/learning-path">https://learn.llo.lu/platform/#/learning-path</a>)</li>
+<li>SDL Platform (<a href="https://sdl.inll.lu/">https://sdl.inll.lu/</a>)</li>
+</ul>
 
             ]]>
         </content>
