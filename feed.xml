@@ -3,7 +3,7 @@
     <title>Luxembourgish</title>
     <link href="https://armanruet.github.io/Luxembourgish/feed.xml" rel="self" />
     <link href="https://armanruet.github.io/Luxembourgish" />
-    <updated>2025-01-31T23:48:44+01:00</updated>
+    <updated>2025-02-02T18:55:40+01:00</updated>
     <author>
         <name>Arman Hossen</name>
     </author>
@@ -1291,37 +1291,45 @@ Mnemonic: “UNITED ZOAH”</li>
 <p>Understanding basic conversations in Luxembourgish is essential for daily interactions. This lesson covers fundamental questions and responses for personal introductions.</p><h2 id="essential-questions-and-their-structure">Essential Questions and Their Structure</h2>
 <ol>
 <li><p><strong>Asking Names</strong></p><ul>
-<li>Question: “Wéi heeschs du?” (What is your name?)</li>
+<li>Question: “Wéi heeschs du?” (What is your name?) 🔊<audio loading="lazy" controls style="width: 150px; height: 30px; vertical-align: middle;">
+ <source src="media/posts/1/Wéi_heeschs_du.m4a" type="audio/mpeg">
+</audio> </li>
 <li>Structure: ‘Wéi’ (how) + ‘heeschen’ (to be named) + ‘du’ (you)</li>
 </ul>
 </li>
 <li><p><strong>Asking Origin</strong></p><ul>
-<li>Question: “Vu wou kënns du?” (Where are you from?)</li>
+<li>Question: “Vu wou kënns du?” (Where are you from?) <audio loading="lazy" controls style="width: 100px; height: 25px; vertical-align: middle; margin: 0 5px;"> <source src="media/posts/1/Vu_wou_kënns_du.m4a" type="audio/mpeg">
+</audio></li>
 <li>Structure: ‘Vu wou’ (from where) + ‘kommen’ (to come) + ‘du’ (you)</li>
 </ul>
 </li>
 <li><p><strong>Asking About Residence</strong></p><ul>
-<li>Question: “Wou wunns du?” (Where do you live?)</li>
+<li>Question: “Wou wunns du?” (Where do you live?) <audio loading="lazy" controls style="width: 100px; height: 25px; vertical-align: middle; margin: 0 5px;"> <source src="media/posts/1/Wou_wunns_du.m4a" type="audio/mpeg">
+</audio></li>
 <li>Structure: ‘Wou’ (where) + ‘wunnen’ (to live) + ‘du’ (you)</li>
 </ul>
 </li>
 <li><p><strong>Asking Age</strong></p><ul>
-<li>Question: “Wéi al bass du?” (How old are you?)</li>
+<li>Question: “Wéi al bass du?” (How old are you?) <audio loading="lazy" controls style="width: 100px; height: 25px; vertical-align: middle; margin: 0 5px;"> <source src="media/posts/1/Wéi_al_bass_du.m4a" type="audio/mpeg">
+</audio></li>
 <li>Structure: ‘Wéi’ (how) + ‘al’ (old) + ‘bass’ (are) + ‘du’ (you)</li>
 </ul>
 </li>
 <li><p><strong>Asking About Work</strong></p><ul>
-<li>Question: “Wat schaffs du?” (What do you do for work?)</li>
+<li>Question: “Wat schaffs du?” (What do you do for work?) <audio loading="lazy" controls style="width: 100px; height: 25px; vertical-align: middle; margin: 0 5px;"> <source src="media/posts/1/Wat_schaffs_du.m4a" type="audio/mpeg">
+</audio></li>
 <li>Structure: ‘Wat’ (what) + ‘schaffen’ (to work) + ‘du’ (you)</li>
 </ul>
 </li>
 <li><p><strong>Asking About Food Preferences</strong></p><ul>
-<li>Question: “Wat ëss du gären?” (What do you like to eat?)</li>
+<li>Question: “Wat ëss du gären?” (What do you like to eat?)<audio loading="lazy" controls style="width: 100px; height: 25px; vertical-align: middle; margin: 0 5px;"> <source src="media/posts/1/Wat_ëss_du_gären.m4a" type="audio/mpeg">
+</audio></li>
 <li>Structure: ‘Wat’ (what) + ‘iessen’ (to eat) + ‘gären’ (to like)</li>
 </ul>
 </li>
 <li><p><strong>Asking About Languages</strong></p><ul>
-<li>Question: “Wéi vill Sproochen schwätzt du?” (How many languages do you speak?)</li>
+<li>Question: “Wéi vill Sproochen schwätzt du?” (How many languages do you speak?)<audio loading="lazy" controls style="width: 100px; height: 25px; vertical-align: middle; margin: 0 5px;"> <source src="media/posts/1/Wéi_vill_Sproochen_schwätzt_du.m4a" type="audio/mpeg">
+</audio></li>
 <li>Structure: ‘Wéi vill’ (how many) + ‘Sproochen’ (languages) + ‘schwätzen’ (to speak)</li>
 </ul>
 </li>
