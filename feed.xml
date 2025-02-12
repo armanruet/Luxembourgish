@@ -3,7 +3,7 @@
     <title>Luxembourgish</title>
     <link href="https://armanruet.github.io/Luxembourgish/feed.xml" rel="self" />
     <link href="https://armanruet.github.io/Luxembourgish" />
-    <updated>2025-02-12T20:50:09+01:00</updated>
+    <updated>2025-02-12T23:04:35+01:00</updated>
     <author>
         <name>Arman Hossen</name>
     </author>
@@ -121,7 +121,7 @@
 </ul>
 </li>
 <li>. = Punkt (dot)</li>
-<li>Example: <a href="mailto:&#109;&#x61;&#x72;&#105;&#x65;&#45;&#x63;&#x6c;&#x61;&#105;&#114;&#x65;&#x40;&#x6d;&#97;&#105;&#108;&#x2e;&#x6c;&#x75;">&#109;&#x61;&#x72;&#105;&#x65;&#45;&#x63;&#x6c;&#x61;&#105;&#114;&#x65;&#x40;&#x6d;&#97;&#105;&#108;&#x2e;&#x6c;&#x75;</a> spelled as:
+<li>Example: <a href="mailto:&#x6d;&#97;&#x72;&#x69;&#101;&#45;&#99;&#108;&#97;&#x69;&#x72;&#x65;&#x40;&#109;&#x61;&#105;&#x6c;&#x2e;&#x6c;&#117;">&#x6d;&#97;&#x72;&#x69;&#101;&#45;&#99;&#108;&#97;&#x69;&#x72;&#x65;&#x40;&#109;&#x61;&#105;&#x6c;&#x2e;&#x6c;&#117;</a> spelled as:
 M-A-R-I-E-Bindestréch-C-L-A-I-R-E-at-M-A-I-L-Punkt-L-U</li>
 </ul>
 <h3 id="email-questions">Email Questions</h3>
@@ -1450,6 +1450,72 @@ an d&#39;Belle Etoile = to Belle Etoile
 <li>all Dag = every day</li>
 <li>heiansdo = sometimes</li>
 <li>normalerweis = usually</li>
+</ul>
+<h1 id="keen-vs-net-in-luxembourgish-a-quick-guide">KEEN vs NET in Luxembourgish: A Quick Guide</h1>
+<h2 id="core-difference">Core Difference</h2>
+<table>
+<thead>
+<tr>
+<th>NET</th>
+<th>KEEN</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Equivalent to “not”</td>
+<td>Equivalent to “no, not any, not a, none, nobody”</td>
+</tr>
+</tbody></table>
+<h2 id="when-to-use-net">When to Use NET</h2>
+<p>Net is used to negate:</p><ol>
+<li><p><strong>Adjectives</strong></p><pre><code>D&#39;Wieder ass schéin → D&#39;Wieder ass net schéin
+(The weather is nice → The weather is not nice)
+</code></pre>
+</li>
+<li><p><strong>Verbs</strong></p><pre><code>Ech ginn akafen → Ech ginn net akafen
+(I go shopping → I don&#39;t go shopping)
+</code></pre>
+</li>
+<li><p><strong>Nouns with:</strong></p><ul>
+<li>Definite articles<pre><code>Dat ass d&#39;Haus → Dat ass net d&#39;Haus
+</code></pre>
+</li>
+<li>Possessive pronouns<pre><code>Dat ass mäi Vëlo → Dat ass net mäi Vëlo
+</code></pre>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="when-to-use-keen">When to Use KEEN</h2>
+<p>Keen is used to negate:</p><ol>
+<li><p><strong>Nouns with indefinite articles</strong></p><pre><code>en Dessert → keen Dessert
+eng Duechter → keng Duechter
+</code></pre>
+</li>
+<li><p><strong>Nouns without articles</strong></p><pre><code>Ech hunn Zäit → Ech hu keng Zäit
+</code></pre>
+</li>
+</ol>
+<h2 id="gender-forms">Gender Forms</h2>
+<ul>
+<li><strong>Keen</strong> = masculine &amp; neuter nouns</li>
+<li><strong>Keng</strong> = feminine nouns &amp; plurals</li>
+</ul>
+<h2 id="special-cases">Special Cases</h2>
+<p>Some expressions can use both:</p><pre><code>Ech spille keen Tennis = Ech spillen net Tennis
+Ech schwätze kee Lëtzebuergesch = Ech schwätzen net Lëtzebuergesch
+</code></pre>
+<h2 id="quick-decision-tree">Quick Decision Tree</h2>
+<pre><code class="language-mermaid">graph TD
+    A[Word to Negate] --&gt; B{What type?}
+    B --&gt;|Adjective/Verb| C[Use NET]
+    B --&gt;|Noun| D{Has article?}
+    D --&gt;|Definite/Possessive| E[Use NET]
+    D --&gt;|Indefinite/None| F[Use KEEN]
+</code></pre>
+<h3 id="pro-tip">Pro Tip</h3>
+<p>💡 When in doubt about a noun:</p><ul>
+<li>If you can put “a/an” before it → Use KEEN</li>
+<li>If you can put “the” or “my/your” before it → Use NET</li>
 </ul>
 <h2 id="10-practice-exercises">10. Practice Exercises</h2>
 <h3 id="exercise-1-time-expressions">Exercise 1: Time Expressions</h3>
