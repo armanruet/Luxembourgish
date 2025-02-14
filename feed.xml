@@ -3,7 +3,7 @@
     <title>Luxembourgish</title>
     <link href="https://armanruet.github.io/Luxembourgish/feed.xml" rel="self" />
     <link href="https://armanruet.github.io/Luxembourgish" />
-    <updated>2025-02-14T10:50:53+01:00</updated>
+    <updated>2025-02-14T10:59:57+01:00</updated>
     <author>
         <name>Arman Hossen</name>
     </author>
@@ -73,7 +73,9 @@
 <li><strong>Bouf</strong> - son</li>
 <li><strong>Kanner</strong> - children</li>
 </ul>
-<p><figure class="post__image"><img loading="lazy" src="media/posts/11/Class_2.png" alt="Family Status Conversation"  sizes="(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)" srcset="media/posts/11/responsive/Class_2-xs.png 300w ,media/posts/11/responsive/Class_2-sm.png 480w ,media/posts/11/responsive/Class_2-md.png 768w ,media/posts/11/responsive/Class_2-lg.png 1024w"></figure>{width=800 height=600}</p><h2 id="2-the-n-rule-dn-regel-📝">2. The N-Rule (D’N-Regel) 📝</h2>
+<img loading="lazy" src="media/posts/11/Class_2.png" alt="Family Status Conversation" width="800" height="600" sizes="(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)" srcset="media/posts/11/responsive/Class_2-xs.png 300w ,media/posts/11/responsive/Class_2-sm.png 480w ,media/posts/11/responsive/Class_2-md.png 768w ,media/posts/11/responsive/Class_2-lg.png 1024w">
+
+<h2 id="2-the-n-rule-dn-regel-📝">2. The N-Rule (D’N-Regel) 📝</h2>
 <h3 id="basic-rules">Basic Rules</h3>
 <p>Keep the final ‘n’ or ‘nn’ when the next word starts with:</p><ol>
 <li><strong>DHNTZ</strong>: <ul>
@@ -98,7 +100,7 @@
 <li><strong>A</strong>uto (car)</li>
 <li><strong>H</strong>ond (dog)</li>
 </ul>
-<p><figure class="post__image"><img loading="lazy" src="media/posts/11/Class_2.png" alt="Family Status Conversation"  sizes="(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)" srcset="media/posts/11/responsive/Class_2-xs.png 300w ,media/posts/11/responsive/Class_2-sm.png 480w ,media/posts/11/responsive/Class_2-md.png 768w ,media/posts/11/responsive/Class_2-lg.png 1024w"></figure>{width=800 height=600}</p><h3 id="special-cases">Special Cases</h3>
+<h3 id="special-cases">Special Cases</h3>
 <ol>
 <li><strong>End of sentence/line</strong>: Keep ‘n’<ul>
 <li><em>Net fëmmen!</em></li>
@@ -385,7 +387,7 @@ B: Ech sinn de 15. Januar 1974 gebuer.
 </ul>
 </li>
 <li>. = Punkt (dot)</li>
-<li>Example: <a href="mailto:&#x6d;&#97;&#114;&#105;&#x65;&#x2d;&#99;&#108;&#x61;&#105;&#x72;&#101;&#x40;&#109;&#97;&#x69;&#x6c;&#46;&#x6c;&#117;">&#x6d;&#97;&#114;&#105;&#x65;&#x2d;&#99;&#108;&#x61;&#105;&#x72;&#101;&#x40;&#109;&#97;&#x69;&#x6c;&#46;&#x6c;&#117;</a> spelled as:
+<li>Example: <a href="mailto:&#x6d;&#x61;&#x72;&#105;&#x65;&#x2d;&#99;&#108;&#97;&#x69;&#114;&#101;&#64;&#x6d;&#97;&#105;&#108;&#x2e;&#108;&#x75;">&#x6d;&#x61;&#x72;&#105;&#x65;&#x2d;&#99;&#108;&#97;&#x69;&#114;&#101;&#64;&#x6d;&#97;&#105;&#108;&#x2e;&#108;&#x75;</a> spelled as:
 M-A-R-I-E-Bindestréch-C-L-A-I-R-E-at-M-A-I-L-Punkt-L-U</li>
 </ul>
 <h3 id="email-questions">Email Questions</h3>
