@@ -3,7 +3,7 @@
     <title>Luxembourgish</title>
     <link href="https://armanruet.github.io/Luxembourgish/feed.xml" rel="self" />
     <link href="https://armanruet.github.io/Luxembourgish" />
-    <updated>2025-02-14T07:55:15+01:00</updated>
+    <updated>2025-02-14T10:17:14+01:00</updated>
     <author>
         <name>Arman Hossen</name>
     </author>
@@ -73,6 +73,8 @@
 <li><strong>Bouf</strong> - son</li>
 <li><strong>Kanner</strong> - children</li>
 </ul>
+<img loading="lazy" src="media/posts/11/Class_2.png" alt="Family Status Conversation" width="800" height="600" sizes="(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)" srcset="media/posts/11/responsive/Class_2-xs.png 300w ,media/posts/11/responsive/Class_2-sm.png 480w ,media/posts/11/responsive/Class_2-md.png 768w ,media/posts/11/responsive/Class_2-lg.png 1024w">
+
 <h2 id="2-the-n-rule-dn-regel-📝">2. The N-Rule (D’N-Regel) 📝</h2>
 <h3 id="basic-rules">Basic Rules</h3>
 <p>Keep the final ‘n’ or ‘nn’ when the next word starts with:</p><ol>
@@ -385,7 +387,7 @@ B: Ech sinn de 15. Januar 1974 gebuer.
 </ul>
 </li>
 <li>. = Punkt (dot)</li>
-<li>Example: <a href="mailto:&#109;&#97;&#114;&#105;&#x65;&#x2d;&#x63;&#x6c;&#x61;&#105;&#114;&#x65;&#x40;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#x6c;&#117;">&#109;&#97;&#114;&#105;&#x65;&#x2d;&#x63;&#x6c;&#x61;&#105;&#114;&#x65;&#x40;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#x6c;&#117;</a> spelled as:
+<li>Example: <a href="mailto:&#109;&#x61;&#x72;&#105;&#101;&#x2d;&#99;&#108;&#x61;&#105;&#114;&#x65;&#64;&#109;&#x61;&#x69;&#108;&#46;&#x6c;&#x75;">&#109;&#x61;&#x72;&#105;&#101;&#x2d;&#99;&#108;&#x61;&#105;&#114;&#x65;&#64;&#109;&#x61;&#x69;&#108;&#46;&#x6c;&#x75;</a> spelled as:
 M-A-R-I-E-Bindestréch-C-L-A-I-R-E-at-M-A-I-L-Punkt-L-U</li>
 </ul>
 <h3 id="email-questions">Email Questions</h3>
